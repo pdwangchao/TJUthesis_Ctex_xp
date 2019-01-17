@@ -1,6 +1,8 @@
 # TJUthesis_Ctex_xp
 Tex template for thesis of Tianjin University. Just use it in by Ctex on XP.
-you need Ctex2.9 and intall it on XP system.
+
+You need Ctex2.9 and intall it on XP system.
+
 It may be a good idea to use a virtual machine such as Vmware.
 
 你需要使用Ctex2.9, 基于XP系统
