@@ -1,0 +1,60 @@
+% !Mode:: "TeX:UTF-8"
+
+\cheading{天津大学博士学位论文}
+\ctitle{特大空间声场和人群噪声特点的研究及预测模型的建立}  %封面用论文标题，自己可手动断行
+\etitle{Characteristics and Prediction Model of The Sound Field and Crowd Noise in Extra-large Spaces}
+\caffil{天津大学建筑学院} %学院名称
+\cmacrosubjecttitle{一级学科}
+\cmacrosubject{建筑学}
+\csubjecttitle{学科专业}
+\csubject{建筑技术科学}   % 专业
+\cauthortitle{研究生}     % 学位
+\cauthor{王超}   %学生姓名
+\csupervisortitle{指导教师}
+\csupervisor{康健 教授} %导师姓名
+
+
+\declaretitle{独创性声明}
+\declarecontent{
+本人声明所呈交的学位论文是本人在导师指导下进行的研究工作和取得的研究成果，除了文中特别加以标注和致谢之处外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含为获得 {\underline{\kai\textbf{~天津大学~}}}或其他教育机构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。
+}
+\authorizationtitle{学位论文版权使用授权书}
+\authorizationcontent{
+本学位论文作者完全了解{\underline{\kai\textbf{~天津大学~}}}有关保留、使用学位论文的规定。特授权{\underline{\kai\textbf{~天津大学~}}} 可以将学位论文的全部或部分内容编入有关数据库进行检索，并采用影印、缩印或扫描等复制手段保存、汇编以供查阅和借阅。同意学校向国家有关部门或机构送交论文的复印件和磁盘。
+}
+\authorizationadd{(保密的学位论文在解密后适用本授权说明)}
+\authorsigncap{学位论文作者签名:}
+\supervisorsigncap{导师签名:}
+\signdatecap{签字日期:}
+
+
+%\cdate{\CJKdigits{\the\year} 年\CJKnumber{\the\month} 月 \CJKnumber{\the\day} 日}
+% 如需改成二零一二年四月二十五日的格式，可以直接输入，即如下所示
+\cdate{二零一八年三月}
+%\cdate{\the\year 年\the\month 月 \the\day 日} % 此日期显示格式为阿拉伯数字 如2012年4月25日
+\cabstract{
+随着大型会展、铁路枢纽等大型公共建筑的兴建，特大空间的室内声环境也变得越来越重要。虽然特大空间声场的扩散不均匀性已经得到了广泛的认同，但是系统性的研究仍然有待进行。其中时域的声能衰变和空间的声能分布二者共同构成了特大空间声场的基本框架。而且由于特大空间能够容纳大量的人群，由此引起的人群噪声的预测和控制也十分重要，这方面的研究也有待进行。
+
+本文通过对不同容积的空间的实地测试、计算机模拟以及理论研究，发现了特大空间中，混响时间的空间分布更加均匀，早期衰变时间（EDT）和混响时间（T30）的数值也更加接近；衰减曲线早期在近声源处衰减更为不规律，有的出现双曲线型，而远声源处衰减曲线更为平滑，均为直线型；脉冲响应整体上比较稀疏，但由于扩散的原因脉冲数量远多于理论预测，早期反射声和晚期反射声的声能差距和持续时间区别很大；语言传输指数整体上的空间分布波动较大，整体上来说，空间越大测得的语言传输指数越低。得出了大空间声场中的声能分布规律，其总声能和混响声能均表现出近似指数衰减的特征；根据地面一次反射声的重要性建立了相应的特大空间声能分布预测模型；对不同声学参数对特大空间声压级空间分布的影响进行了研究，发现吸声量降噪效果的有效性和局限性，吸声材料位置不同，其降噪效果也有很大差异，地面和墙面是比较有优势的位置，但这也受到建筑体型比例的影响。不同容积空间每提高固定比例的高度其降噪效果为定值，在特大空间中此降噪数值有所降低，空气吸声在特大空间中具有十分重要的地位。
+
+通过测试和理论计算探索了特大空间中的人群噪声，发现人群噪声与人数有强相关关系，根据座席区人群的聚集作用开发了一种特大空间中人群平均声功率的测试方法，并结合座席区的聚集人群和散布人群建立了特大空间人群噪声预测模型。最终，根据之前各章研究得出的结论对特大空间中的声学设计提出了特大空间中建声、电声和降噪设计对策。本文的研究只是初步探讨了大空间声场的一些基本特点，而特大空间声能衰变的评价、声环境的主观评价以及其他因素对大空间声场特性的影响还有待进一步的研究。
+}
+
+\ckeywords{特大空间，声场，声压级，预测模型，人群噪声}
+
+\eabstract{
+With the construction of large-scale public buildings such as exhibitions and waiting halls of transportation hub, the interior acoustic environment of large spaces has become more and more important. The systematical research of sound field in extra-large space is more and more urgent. Although the inhomogeneity of diffusion in the sound field of extra-large spaces has been widely received, systematic research remains to be carried out.
+
+In this paper, through on-site acoustic tests, computer simulations and theoretical studies on different volumes of space, it has been found that the spatial distribution of reverberation time in extra large spaces is more uniform in extra large spaces, and the values of EDT and T30 are also closer; The decay curve is more irregular near the source and some of them appears hyperbolic. The curve is more smooth and linear far from the source; The impulse response is sparse overall, and far more than the theoretical amount because of diffusion. The difference between sound energy and duration of early reflection and late reflection is very different; The spatial distribution of the Speech Transmission Index fluctuates as a whole. Lower value was obtained with the growth of volume.In this paper, through field tests, computer simulations and theoretical studies on different volumes of space, it has been found that the spatial distribution of reverberation time in extra large spaces is more uniform in extra large spaces, and the values of EDT and T30 are also closer; the decay curve is earlier in the near sound The attenuation at the source is more irregular, some appear hyperbolic, and the attenuation curve at the far source is more smooth and linear; the impulse response is sparse overall, and the reason for diffusion alone is far more than the theoretical amount. The difference between sound energy and duration of reflected sound and late reflection sound is very different; the spatial distribution of the language transmission index as a whole fluctuates. As a whole, the larger the space, the lower the measured language transmission index.
+
+The distribution of acoustic energy in the extra-large space has been explored. The total sound energy and reverberation sound energy both show the similar exponential attenuation characteristics. According to the importance of the first reflection from floor, an energy distribution prediction model for extra-large space is established. The effects of different acoustic parameters on the spatial distribution of supersonic spatial sound pressure levels were studied, and the effectiveness and limitations of noise reduction effects for sound absorption were found. Different position of sound-absorbing materials has different effect of noise reduction. The floor and the wall are relatively advantageous position, but it is also affected by the proportion of the space. The effect of noise reduction is a fixed value for the same height ratio in spaces with different volume, and the noise reduction value is lower in the extra large space. Air sound absorption plays an important role in the large space.
+
+Through on-site test and theoretical calculations, we have explored crowd noise in extra-large spaces and found that there is a strong correlation between crowd noise and number of people. According to the aggregation of crowds in the seat area, we developed a test method for the average sound power of people in large spaces, combined with the seating area. An large crowd noise prediction model have established based on the crowd and dissemination crowds; In the end, according to the results obtained from previous chapters, we propose design strategies for acoustics, electroacoustics, and noise reduction in large space for acoustic design in extra-large spaces. The research in this paper is only a preliminary exploration of some basic characteristics of the large-space sound field, and the evaluation of the decay of the super-spatial acoustic energy, the subjective evaluation of the acoustic environment, and the influence of other factors on the characteristics of the large-space sound field have yet to be further studied.
+
+}
+
+\ekeywords{Extra-large space, Sound field, Sound pressure level, Prediction model, Crowd noise }
+
+\makecover
+
+\clearpage

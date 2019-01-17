@@ -1,0 +1,584 @@
+% !Mode:: "TeX:UTF-8"
+
+\chapter{特大空间声场的声能空间分布及其预测}
+
+本章旨在研究特大空间声场中的声能分布，通过实地测试、计算机模拟和理论预测等手段，得出大空间声场中的声能分布规律，并建立相应的预测模型。
+
+声学上的“大空间”指的是空间足够大，吸声量达到一定程度后，低频共振频率均匀到一定程度，不需要单独考虑低频共振的空间。而随着空间增大，空间声能分布越来越远离理论上的“扩散声场”，则基于扩散声场的声能分布预测模型的适用性也需要重新考虑，本章基于声能预测差异提出声学上大空间和特大空间的判断界限。
+
+通过了解大空间声场中的声能分布规律并建立其预测模型，可以有针对性地进行相应的建声设计、电声设计、声音引导疏散设计，具有十分重要的理论意义和现实意义。
+
+\section{声能空间分布特点}
+
+本节研究旨在通过实测了解大空间声场中的声能分布。为了了解空间逐渐变大后声能分布的变化规律，本文按容积递增选取了四个不同的空间来进行实地测试，根据国内外对不同类型和不同大小的空间中声能分布的研究，确定天津党校报告厅、哈尔滨工业大学体育馆、天津大学体育馆、福建贵安剧场四个空间。通过测试可以对大空间声场的声能分布有直观准确的了解，测试结果还可以用于验证计算机模拟和理论预测的准确性。
+
+\subsection{实测场地选择和测量方法}
+
+天津党校报告厅、哈尔滨工业大学体育馆、天津大学体育馆、福建贵安剧场四个空间的场地信息、测试布置和测量方法如下所示。
+
+\textbf{（1）天津党校报告厅}
+
+
+其场地概况和测试环境描述同第\ref{sec:test_describe_and_measurements}节。
+
+a）测试设备：测试中所用声源为无指向球形声源，位于距台口线$\rm 1m$的舞台中央，离地高度为$\rm 1.5m$。测试仪器为Norsonic Nor140 声级计。
+
+b）测点分布：见图~\ref{fig:chapt_2_plan_dangxiao}中测点所示，每个点测量三次并取其平均值，因为空间形式为对称型，所以测点只布置在观众席的右侧位置。
+
+c）测试指标：各中心频率的2分钟A计权等效声压级值（$\rm L_{Aeq, 2min}$）。
+
+\textbf{（2）哈尔滨工业大学体育馆 }
+
+
+ 其平面图如图~\ref{fig:chapt_2_plan_HIT}所示，场地概况和测试环境描述同第\ref{sec:test_describe_and_measurements} 节。
+
+a）测试设备：测试中所用声源为无指向球形声源，位于比赛场地中央略偏$\rm 1m$位置，离地高度为$\rm 1.5m$。测试仪器为Norsonic Nor140声级计。
+
+b）测点分布：见图~\ref{fig:chapt_2_plan_HIT}所示，每个点测量三次并取其平均值，因为空间形式为对称型，所以测点只布置在场地的右上侧，另在其他两个方向布置了两排测点以了解整个空间的声能分布情况。
+
+c）测试指标：各中心频率的2分钟A计权等效声压级值（$L_{Aeq, 2min}$）。
+
+
+\textbf{（3）天津大学体育馆 }
+
+
+ 其平面图如图~\ref{fig:chapt_2_plan_tju_indoor}所示，场地概况和测试环境描述同第\ref{sec:test_describe_and_measurements}节。
+
+a）测试设备：测试中所用声源为无指向球形声源，位于比赛场地中央略偏$1m$位置，离地高度为$1.5m$。测试仪器为Norsonic Nor140声级计。
+
+b）测点分布：见图~\ref{fig:chapt_2_plan_tju_indoor}所示，每个点测量三次并取其平均值，因为空间形式为对称型，且测试目的在于确定声能随距声源距离的衰减，所以测点布置了3排，分三个不同的方向布置。
+
+c）测试指标：各中心频率的2分钟A计权等效声压级值（$L_{Aeq, 2min}$）。
+
+
+
+\textbf{（4）福建贵安剧院  }
+
+其平面图如图~\ref{fig:chapt_2_plan_guian}所示，场地概况和测试环境描述同第\ref{sec:test_describe_and_measurements} 节。
+
+a）测试设备：测试中所用声源为无指向球形声源，位于比赛场地中央略偏$1m$位置，离地高度为$1.5m$。测试仪器为Norsonic Nor140声级计。
+
+b）测点分布：见图~\ref{fig:chapt_2_plan_guian}所示，每个点测量三次并取其平均值，因为空间形式为对称型，且测试空间巨大，测试目的在于确定声能随距离的衰减，所以测点布置了2排，分两个不同的方向布置。
+
+c）测试指标：各中心频率的2分钟A计权等效声压级值（$L_{Aeq, 2min}$）。
+
+\subsection{测试结果分析}
+
+对四个场馆的测试结果进行综合比较，结果如图~\ref{fig:SPL distribution in four cases}所示，四个场馆中总声压级和混响声压级随距离的衰减曲线均出现了接近指数的衰减形状，而且这种趋势在近声源范围内更加明显，在远声源处，曲线逐渐趋于线性。由于球形声源的传播规律，直达声的衰减曲线形状为指数型，受此影响总声压级的衰减曲线接近指数衰减是很好理解的。但是根据“扩散声场”假设，混响声压级随距离衰减从理论上应该是零，即混响声压级在空间各处相同。实测数据显示并非如此，这意味着在这四个空间中扩散声场假设都是不成立的。
+
+对各个场馆中的衰减曲线求其多项式回归，结果显示四个场馆中的确定系数$R^2$值的范围为从0.87到0.92，这是一个较高的数值范围，考虑到各个空间中的衰减曲线反映的是不同方向的测试点的汇总数据，高确定系数表明据在距声源相同距离的不同测试点声压级数据差异不大，这也从侧面表明空间中的声压级分布还是有一定规律可循的，也说明提出理论预测模型是有一定可行性的。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_SPL_attenuation_dangxiao.eps}} 				% eps file
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_SPL_attenuation_HIT.eps} }\\
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_SPL_attenuation_TJU.eps} }
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_SPL_attenuation_guian.eps} }
+		\caption{ \label{fig:SPL distribution in four cases} 四个场馆中的声压级随距离衰减。（a:天津党校报告厅；b: 哈尔滨工业大学体育馆；c:天津大学体育馆；d:福建贵安剧院。误差棒为三次测试的标准差。作者自绘。）}
+	\end{center}
+\end{figure}
+
+实地测试结果直观地表现出了空间容积变大后，声压级空间分布出现的一些变化，但是由于实地测试总是受制于场馆体形、吸声材料布置、温湿度变化、扩散程度等实际因素的影响，如果想直接从实地测试中得到详细的规律是十分困难的，所需的样本量和测试工作量也是难以实现的，所以本文在后续的工作中引入了计算机模拟，以进行更为详尽的控制变量研究。而实地测试结果则主要用于指导研究方向和预测结果验证。
+
+\subsection{计算机模拟设置}
+
+由于实地测试在控制变量方面的局限性，很难得到容积影响声能空间分布的准确规律。为了更好的研究空间容积变大后声能空间分布特点，在实地测试的基础上进行了计算机模拟。基于镜像声源法编写了相应的计算程序，在控制变量的基础上对容积不同引起的声压级空间分布变化进行了研究。
+
+为了控制变量，本文模拟了一系列不同容积的虚拟正方体，研究不同吸声系数和不同容积对声压级空间分布的影响。空间从边长$10 m$到$500 m$不等，具体为10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450 和$500 m$，因此容积从$1000 m^3$至$125000000 m^3$，涵盖了从正常空间到特大空间的不同容积范围。对空间各个界面赋予单一的平均吸声系数，数值范围为从0.1到0.9。
+
+在空间中均匀布置接收点以得到空间中的声压级分布。其中声源点布置于空间底面的正中央，距地面$1.2 m$高。由于空间体形对称，15个接收点均匀分布在空间四分之一区域内，接受点均距地面$1.5 m$ 高。由于不同空间大小差异悬殊，为了对一系列空间的声压级空间分布进行比较，从小到大的一系列空间中，初始接收点个数为15个，下一个空间除了均匀布置的15个测点外，对前一个空间中的所有测点坐标也进行了计算，以进行比较。
+
+
+\subsection{模拟结果分析}
+
+在四个场馆的实地测试中，已经对声压级空间分布的基本特点进行了初步探索，在计算机模拟的支持下，本文进行了更深入的研究。
+
+计算机模拟得到在不同大小的一系列空间中，声压级随距离的衰减曲线，如图~\ref{fig:chapt_3_simulation_SPL_attenuation} 所示。当空间容积为$1000m^3$时，混响声能随着距声源距离的增加衰减很小，曲线几乎与扩散声场理论模型中的预测值曲线重合，当界面平均吸声系数为0.3时，两条曲线的最大差异为1.1dB，当界面平均吸声系数为0.7时，两条曲线的最大差异为2.5dB，这说明在通常空间（也就是通常的“声学大空间”）中，混响声能在空间中的分布还是比较均匀的，也就是说在空间容积比较小的情况下，使用“扩散声场”假设进行室内声压级的预测还是比较精确的。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_3_simulation_SPL_attenuation_a}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_simulation_SPL_attenuation_a.eps}}\\
+  \subfigure[]{\label{subfig:chapt_3_simulation_SPL_attenuation_b}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_simulation_SPL_attenuation_b.eps}}
+  \caption{计算机模拟的声压级随距离衰减（a:界面吸声系数为0.3；a:界面吸声系数为0.7。FRFF表示地面一次反射声；不同的曲线代表不同的空间边长；图中水平虚线表示经典扩散理论下的混响声能空间分布；斜直虚线表示随距离的直达声衰减曲线。作者自绘。）}\label{fig:chapt_3_simulation_SPL_attenuation}
+\vspace{\baselineskip}
+\end{figure}
+
+但是当空间容积变大以后，图中可以明显看出，混响声能随距离增加表现出指数衰减，与水平虚线呈现出明显的差异，在近声源处明显高于水平虚线，而在远声源处的末端则低于水平虚线，这从定性的角度暗示混响声能空间分布的不均匀更多的可能是来自于声能的不均匀分布，而不是总体上过多或过少的考虑。曲线更加靠近图中的斜直虚线，也就是直达声随距离的衰减曲线（由于图~\ref{fig:chapt_3_simulation_SPL_attenuation}采用的是对数坐标系，所以直达声的衰减曲线形态为斜直线），表明随着空间变大，混响声能的衰减也出现指数特征。
+
+对图~\ref{fig:chapt_3_simulation_SPL_attenuation}的结果进行进一步的分析，可以看出当空间边长大于$100m$时，声压级随距离的衰减曲线从形状上可以分成三部分：第一部分是近声源处的线性衰减，大致的范围约为距声源$6m$以内，不同空间的衰减曲线出现重合的趋势，考虑到直达声随距离的衰减规律与空间大小无关，这种曲线形状可能是由直达声引起的；
+
+第二部分为随后的指数衰减部分，这种指数衰减趋势随着空间变大越来越明显，影响的范围也越来越大。随着空间的增大，不同空间内的混响声能衰减曲线在图中逐渐下降，渐渐逼近最底部的地面一次反射声（图中FRFF曲线），在不同的界面平均吸声系数情况下（0.3 和0.7）均表现出相同的趋势；
+
+最后一部分为远声源处重新出现的线性衰减，随着混响声能随距离的增加越来越小，小到一定程度以后，除了直达声和地面一次反射声以外的混响声能占总声能的比例越来越高，而从统计声学的角度来说，越晚到达的直达声越趋向于空间和时间的均匀，因此此段曲线逐渐表现出直线衰减的特征，而由于直达声和地面一次反射声的指数衰减，以及其余的混响声能也不可能完全空间均匀，总声压级在第三段的衰减曲线还是略微倾斜向下的。
+
+至于界面吸声的影响，可以从两图中曲线和斜直线的相对位置看出，因为更高的吸声系数能够吸收更多的声能，所以图~\ref{subfig:chapt_3_simulation_SPL_attenuation_b}比图~\ref{subfig:chapt_3_simulation_SPL_attenuation_a}中相对直达声斜直线的位置更低，而且图~\ref{subfig:chapt_3_simulation_SPL_attenuation_b}中的曲线比图~\ref{subfig:chapt_3_simulation_SPL_attenuation_a}中的曲线更加倾斜，表现出了更多的指数衰减特征，在同一个图中，越大空间中的衰减曲线指数表现出越多的指数特征，越大的空间中指数衰减的曲线占比越大。这说明空间变大后，声能分布的不均匀程度增大且呈指数型衰减，这是大空间声能衰减的重要特点。
+
+这种三段式的衰减特征与经典的“扩散声场”假设表现出了明显的不同，其形成原因主要是总声压级由直达声能和混响声能共同组成。不同比例的指数衰减的直达声能和近似指数衰减的混响声能共同形成不同形态的总声压级衰减。当空间较小或者界面吸声系数较低时，混响声能在空间中大部分地方都高于直达声能，而且空间较小时，混响声经过多次反射到达空间内某点，分布更加均匀，因此总声压级空间分布均匀，衰减并不明显。
+
+当空间变大或者界面吸声系数较高时，混响声能在近声源处完全被直达声掩盖，在距声源较远处才能超过直达声。而且空间较大时，混响声能反射有限次数便衰减殆尽，空间分布不均匀加大，越大的空间有效的反射次数越少，最终混响声能就越不均匀。由此直达声和混响声能结合产生的总声压级空间分布越不均匀，这便是三段式衰减特征的形成原因。
+
+\FloatBarrier
+\section{声能空间分布预测模型}
+
+本文希望根据之前模拟得出的声压级特点及相应的声能构成分析，建立新的基于统计声学的声压级预测模型，提高在大空间中的声压级预测精确度。
+
+\subsection{预测模型建立} \label{subsection:spl_prediction_model}
+
+预测模型仍然基于统计声学模型，在前人的预测模型上进行改进。通常室内声压级的预测基于 “扩散声场”，广泛应用于声学设计和吸声降噪。室内声压级经典计算公式中声压级
+
+\begin{equation}
+\label{classical_equation}
+L^c=10log_{10}(\frac{W}{4{\pi}r^2}+\frac{4W}{R})+120
+\end{equation}
+
+其中，$L^c$为室内声压级经典计算公式的计算结果；$W$为声源声功率(W)；$R$为房间常数；$r$为距声源距离（m）。房间常数
+
+\begin{equation}
+\label{room_constant}
+R=\frac{\alpha S}{1-\alpha }
+\end{equation}
+
+其中，$\alpha$为界面平均吸声系数；$S$为空间的表面积($m^2$)。但是“扩散声场”从提出来就被认为是理想情况，只能应用于误差可以接受的场景内。
+
+随着空间越来越大，其声场特点越来越偏离扩散声场，室内声压级经典预测公式的预测误差从理论上也会越来越大，因此本文以镜像声源法的预测结果作为标准，对此预测误差进行了模拟研究。研究了从边长为$10m$到$500m$的一系列不同空间，界面平均吸声系数从0.1 到0.9 不等，由于空间的对称性，在空间四分之一区域内平均分布了99个测点，对这一系列空间进行声压级的模拟和计算，单个空间取其预测差异最大值作为这个空间预测差异的单一评价值。为了突出早期反射声的不均匀特性，避免计算结果受到空气吸声的干扰，计算过程中空气吸声的作用设置为零。
+
+结果如图\ref{fig:chapt_3_diff_classical_image_SPL}所示，随着空间容积的增大和界面平均吸声系数的增加，总声压级的预测结果差异越来越大。结果由梯形图表示，颜色越深代表差异越大。当一个空间的容积小于$8000 m^3$（此时换算为立方体的边长为$20 m$）时，室内声压级经典预测模型和镜像声源法的声压级预测结果差异通常来说在$0.5 dB$以内。从界面平均吸声系数来说，当界面平均吸声系数大于0.7 且空间容积大于$125000 m^3$ （此时换算为立方体的边长为$50 m$）时，二者预测结果的差异仍然小于$1 dB$。
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[width = 0.7\textwidth]{phd_figures/chapt_3_diff_classical_image_SPL.eps}
+		\caption{ \label{fig:chapt_3_diff_classical_image_SPL} 镜像声源法和室内声压级经典预测公式在不同空间中的预测结果差异（经典公式-镜像声源法），每个空间的预测差异最大值作为单一评价值。作者自绘。}		
+	\end{center}
+\end{figure}
+
+考虑到总声压级由混响声能和直达声能组成而直达声与空间大小和界面声学特性无关，此差异由混响声能的空间不均匀产生，这也是经典预测公式预测误差的产生原因，因此根据图~\ref{fig:chapt_3_simulation_SPL_attenuation}提出一条预测误差曲线，以预测误差的大小来区分声学上的“大空间”和“特大空间”。预测差异有很多评价标准，大多以声级计的测试误差值作为评价依据。如果以$1.5 dB$作为预测差异的最大界限，则不同空间类型的区分曲线介于图~\ref{fig:chapt_3_simulation_SPL_attenuation}中$1.4 dB$ 和$1.6 dB$ 之间。
+
+预测差异的原因从图~\ref{fig:chapt_3_simulation_SPL_attenuation}中可知，混响声能和扩散声场假设的最大差异出现在近声源处。虽然此最大差异随着界面吸声系数的增加变大了，但是与此同时，混响声能-直达声的声能比例也变小了，这导致了最终的总声压级预测结果与空间大小成正比，而与界面吸声系数的大小成反比。
+
+近几十年来，对室内声压级计算公式进行了各种各样的修正。其中影响最广泛的为Barron提出的声压级预测模型，被称之为“Barron 模型”，此模型中声压级
+
+\begin{eqnarray}
+\label{barron_equation}
+L^{B}=10log_{10}(\frac{W}{4{\pi}r^2}+\frac{4W}{R}\cdot{e^{\frac{-13.82r}{cT_E}}})+120
+\end{eqnarray}
+
+其中，$c$为声速（m/s）；$T_E$为艾润混响时间（s），Barron模型提出以后在很多音乐厅的实地测试中进行了验证，取得了很好的预测精确度。
+
+图~\ref{fig:chapt_3_diff_model_reason}能够直观的表现出Barron公式的预测原理，反射声从声源发出后在空间各界面之间反射，经过一段时间以后越来越趋向于空间均匀，假设$t_c$为反射声到达“统计学均匀”的时间,则可在此基础上展开不同的假设，如果认为$t_c$可以简化至发射声出发的时间，即图~\ref{fig:chapt_3_diff_model_reason}中的原点，表示发射声发出瞬间即到达统计学均匀，则此模型为室内声压级经典预测模型；如果认为$t_c$可以简化至直达声到达测试点的时间，即图中的$t_D$，表示发射声到达测试点瞬间即到达统计学均匀，则此模型为“Barron模型”。
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_diff_model_reason.eps}
+\caption{
+不同声压级预测模型考虑的时间节点比较。（$t_D$为直达声到达测试点的时间，$t_f$为地面一次反射声的到达时间；$t_c$为反射声到达统计学均匀的时间。作者自绘。）}\label{fig:chapt_3_diff_model_reason}
+\vspace{\baselineskip}
+\end{figure}
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_path_difference_with_dis.eps}
+\caption{
+直达声和地面一次反射声之间的声程差随距声源距离的变化，作者自绘。}\label{fig:chapt_3_path_difference_with_dis}
+\vspace{\baselineskip}
+\end{figure}
+
+根据早期反射声阶段的不同近似和简化，比如说早期反射声的声序列形状假设或者早期反射声的衰减速率假设，还有很多其他预测模型被提出，但是这些模型的预测精确度褒贬不一，在不同的场景中的预测结果的准确度评价并不一致。
+
+地面一次反射声（FRFF）能量上明显高于其他反射声，如图~\ref{fig:chapt_3_simulation_SPL_attenuation}所示，这也能从直达声和地面一次反射声的声程差看出，如图~\ref{fig:chapt_3_path_difference_with_dis}所示，在近声源处二者声程差约为$2.4 m$，即声音在$1.2 m$的高度上来回的距离。随着距声源距离的增加，直达声和FRFF的声程差逐渐减小，这说明直达声能和地面一次反射声能能量大小上越来越接近，甚至在远声源处二者差异不大，这足够说明地面一次反射声的重要性。
+
+
+如果将地面一次反射声单独考虑，则理论上是能够提高预测模型的预测精度的。具体为将图~\ref{fig:chapt_3_diff_model_reason} 中$t_c$简化至地面一次反射声到达的时间，即图~\ref{fig:chapt_3_diff_model_reason}中的$t_f$，表示地面一次反射声到达瞬间即到达统计学均匀，总声压级分成三部分考虑，第一部分为直达声，根据球形声源传播规律计算；第二部分为地面一次反射声，计算过程将在后续给出；地面一次反射声之外的混响声能被假设为符合“统计平均”，根据Barron公式的计算方法得出 。这就是本文中希望提出的预测模型，可以称之为“FRFF预测模型”。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.8\textwidth]{phd_figures/chapt_3_geometry_of_s_and_r.eps}
+\caption{
+根据镜像声源法的声源和接收点的几何关系图，作者自绘。}\label{fig:chapt_3_geometry_of_s_and_r}
+\vspace{\baselineskip}
+\end{figure}
+
+
+地面一次反射声的计算如图~\ref{fig:chapt_3_geometry_of_s_and_r}所示，声源点高度$H_s$为$1.5 m$，接收点高度$H_r$为$1.2 m$，这是声学测试中的一个标准距离，$1.5m$相当于人站立时耳朵的高度，$1.2 m$相当于人坐时耳朵的高度。根据图~\ref{fig:chapt_3_geometry_of_s_and_r}的几何关系图可以得到以下关系：
+
+\begin{eqnarray}
+\label{eq:h_s_minus_r}
+\Delta H=H_s-H_r
+\end{eqnarray}
+
+其中，$\Delta H$为声源和接收点的高度差。
+
+\begin{eqnarray}
+\label{eq:gougu_little}
+r^2=(\Delta H)^2+{L_h}^2
+\end{eqnarray}
+
+其中，$r$为声源和接收点的直接距离；$L_h$为声源和接收点的水平距离。
+
+\begin{eqnarray}
+\label{eq:gougu_large}
+L^2=(2H_s-\Delta H)^2+{L_h}^2
+\end{eqnarray}
+
+其中，$L$是地面一次反射声的声程。
+
+根据公式~（\ref{eq:h_s_minus_r}），公式~（\ref{eq:gougu_little}） 和公式（\ref{eq:gougu_large}），可以得到
+
+\begin{eqnarray}
+\label{eq:length_of_L}
+L=\sqrt{{4H_s}{H_r}+r^2}
+\end{eqnarray}
+
+将之前提到的地面一次反射声考虑在“Barron”模型中以后，将三部分声能都进行考虑，得到以下总声能计算公式
+
+\begin{eqnarray}
+\label{eq:initial_large_space_equation}
+L'=&&10log_{10}(\frac{W}{4{\pi}r^2}+\frac{W(1-\alpha_{f})}{4{\pi}L^2}+\nonumber\\
+&&\frac{4W}{R}\cdot{e^{\frac{-13.82L}{cT}}})+120
+\end{eqnarray}
+
+其中，$\alpha_f$为地面的吸声系数；$T$为测的或计算所得的混响时间（s）；将公式~（\ref{eq:length_of_L}）和公式~（\ref{eq:initial_large_space_equation}）结合，得到以下公式
+
+\begin{eqnarray}
+\label{large_space_equation}
+L'=&&10log_{10}(\frac{W}{4{\pi}r^2}+\frac{W(1-\alpha_{f})}{4{\pi}(4H_sH_r+r^2)}+\nonumber\\
+&&\frac{4W}{R}\cdot{e^{\frac{-13.82\sqrt{4H_sH_r+r^2}}{cT}}})+120
+\end{eqnarray}
+
+这就是考虑了地面一次反射声以后的FRFF声压级预测模型，因此从理论上讲，本模型不适用于声源直达声或者地面一次反射声在接收点处不能被看到的情况，在声源或者接收点远离地面时的预测准确率也并不确定。
+
+\subsection{预测模型精确度}
+
+将FRFF模型应用于前文叙述的四个空间的测试，以及基于镜像声源法的计算机模拟结果中，以验证预测模型的预测准确性。
+
+为了进行比较，同时还使用了Barron模型和经典公式进行预测，结果如图~\ref{fig:Total_SPL_attenuation_and_prediction}所示。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_Total_SPL_attenuation_and_prediction_a.eps}} 				% eps file
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_Total_SPL_attenuation_and_prediction_b.eps} }\\
+		{\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_Total_SPL_attenuation_and_prediction_c.eps} }
+		{\includegraphics[width=0.48 \textwidth]{phd_figures/chapt_3_Total_SPL_attenuation_and_prediction_d.eps} }
+		\caption{ \label{fig:Total_SPL_attenuation_and_prediction} 四个空间中预测和实测的声压级随距离衰减曲线。（a:天津党校报告厅；b:哈尔滨工业大学体育馆；c:天津大学体育馆；d:贵安剧院。作者自绘。）}
+	\end{center}
+\end{figure}
+
+在四个空间中，用于预测的平均吸声系数由实测的混响时间根据艾润公式得出。声源的声功率由实测的声源$1 m$处声压级推导得出，因为此处的直达声比地面一次反射声大$9.5 dB$,能量上足够掩盖其余的混响声能，由直达声直接推导出声源声功率的大小。
+
+由图~\ref{fig:Total_SPL_attenuation_and_prediction}可知，经典模型（图中的经典模型曲线）在近声源处低估了总声能，大致范围为距声源$10m$到$20m$范围内，在远声源处则有所高估。Barron模型的基本原理为在混响声能上加上了一个距离相关的系数，在远声源处Barron 模型得到了比较准确的预测结果，但是在近声源处仍然对总声能有所低估。随着空间容积的变大，在所有的三个预测模型中，FRFF模型取得了最好的预测结果。这是因为空间变大以后，其他界面的反射声都相对有所减小，而地面一次反射声由于反射路径的问题，不受空间变化的影响，相对于其他混响声能更加突出，因此在容积较大的空间中得到了更好的预测结果，预测差异得到了明显的减小。
+
+更详细的数据如表\ref{tab:three_models}中所示，FRFF模型在四个空间中预测值与实测值的最大差异在$1.38 dB$和$1.55 dB$ 之间,基本能够满足普通场景的预测精度，如噪声预测或者信噪比预测等。标准差在$0.66 dB$ 和$0.71 dB$之间，预测稳定性也比较高。
+
+\begin{table}[!htb]
+	
+	\centering
+	
+	\caption{\label{tab:three_models} 四个场地中实测和预测值的差异对比(最小表示最小值;最大表示最大值)。}
+	
+        \vspace{0.5em}\centering\wuhao
+		\begin{tabular}{cccccccccc}
+			\toprule[1.5pt]
+			\multirow{2}{1.2cm}{场地名称} & \multicolumn{3}{c}{经典模型} & \multicolumn{3}{c}{Barron模型}& \multicolumn{3}{c}{改进模型}      \\
+			
+			& 最小        & 最大  & 标准差   & 最小    & 最大   & 标准差   & 最小     & 最大  & 标准差   \\ \midrule[1pt]
+			
+			党校报告厅 & -1.7       & 3.49 & 1.46 & -2.09  & 0.58  & 0.72 & -0.94   & 1.55 & 0.66 \\
+			
+			哈工大体育馆  & -2.02      & 2.52 & 1.36 & -2.36  & 0.98  & 0.9  & -1.2    & 1.32 & 0.73 \\
+			
+			天大体育馆  & -3.38      & 2.72 & 1.95 & -3.5   & 0.5   & 1    & -1.38   & 1.33 & 0.66 \\
+			
+			贵安剧院   & -2.4       & 0.52 & 1.03 & -2.71  & -0.34 & 0.77 & -0.7    & 1.49 & 0.71 \\
+			\bottomrule[1.5pt]
+        \end{tabular}
+        \vspace{\baselineskip}
+        \end{table}
+利用模拟可以对预测结果进行进一步分析，这有助于理解FRFF模型更高精度的原理。将镜像声源法的计算结果与三种预测模型的预测结果进行比较，如图~\ref{fig:chapt_3_dif_image_three_model}所示。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_dif_image_three_model_a}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_dif_image_three_model_b}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_b.eps} }\\
+		{\label{subfig:chapt_3_dif_image_three_model_c}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_c.eps} }
+		{\label{subfig:chapt_3_dif_image_three_model_d}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_d.eps} }\\
+	    {\label{subfig:chapt_3_dif_image_three_model_e}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_e.eps} }
+		{\label{subfig:chapt_3_dif_image_three_model_f}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_dif_image_three_model_f.eps} }
+		\caption{ \label{fig:chapt_3_dif_image_three_model} 三种预测模型和基于镜像声源法的计算机模拟结果差异（预测模型 – 计算机模拟）。图中散点线为Barron模型预测结果；实线为经典模型预测结果；虚线和灰实线分别代表使用了赛宾混响时间和艾润混响时间的FRFF模型；（a）、（b）和（c）分别代表容积为$1000 m^3$、$125000 m^3$、$125000000 m^3$，界面吸声系数均为0.1。（d）、（e）和（f）分别代表容积为$1000 m^3$、$125000 m^3$、$125000000 m^3$，界面吸声系数均为0.5。作者自绘。}
+	\end{center}
+\end{figure}
+
+镜像声源法的计算结果与三种预测模型的预测结果差异随着距声源距离的增加呈现出不同的变化趋势。当空间容积为$1000 m^3$ 时，所有的三种模型的预测结果差异很小，差异基本不大于$1 dB$。当容积为$125000 m^3$和$125000000 m^3$时，经典模型和Barron 模型的预测差异曲线均呈现出一个明显的低谷，范围约在距声源$4 m$到$20 m$内。低谷意味着在近声源处低估了总声压级，这主要是由于地面一次反射声和其他混响声能的关系所致，如图~\ref{fig:chapt_3_simulation_SPL_attenuation}所示。低谷的大小与空间容积成正比，与界面吸声系数成反比，当界面吸声系数为0.1 同时容积为$125000000 m^3$时，两个现有模型和计算机模拟的差异最大为$2.7 dB$。
+
+在图~\ref{fig:chapt_3_dif_image_three_model}中，当空间容积变大时，所有四个模型的预测差异总体上都有变大的趋势，差异曲线随着距声源距离的增加出现了更大的波动，这说明基于统计模型预测结果的波动度随着空间容积的增加也变大了。因为空间变大后声线更难达到统计学上的“均匀”，所以从理论上来讲，在更大的空间中运用统计模型存在天然的局限性。
+
+与两个现存的预测模型（经典模型和Barron模型）不同，使用不同混响时间的FRFF模型随着距声源距离的增加，预测差异逐渐变小。这主要是由预测算法的计算原理所致，前文所述的三种预测模型均基于统计模型，只是对于混响声能的计算起始点有所不同，FRFF 预测模型对混响声能的计算起始点最晚，因此在远声源处预测的总声压级最小，从而取得更好的预测效果。
+
+至于预测模型使用赛宾公式还是艾润公式，本文也进行了探讨。如图~\ref{fig:chapt_3_dif_image_three_model}所示，图中使用两种混响时间的预测结果存在差异，但是差异小于$1dB$，并不明显，因此具体使用何种混响时间还需进一步研究。
+
+此处对FRFF模型的预测精确度进行了进一步研究。一系列的立方体被用于虚声源法的计算机模拟和FRFF模型的预测计算，对其中的差异进行统计，如图~\ref{fig:chapt_3_diff_frff_and_image}所示，FRFF模型展现出了更好的预测精确度。新预测模型的预测精确度与容积的大小相关性最高，这也是FRFF 模型更适用于大空间中声压级预测的原因。图~\ref{fig:chapt_3_diff_frff_and_image}显示，当界面平均吸声系数为0.5时，预测的差异出现了最大值，从图~\ref{fig:chapt_3_dif_image_three_model}可以看出，这主要是由于当界面平均吸声系数增大时，预测的混响声能差异增大，但是同时由于界面吸声系数的增加，混响声能被吸收的更多，导致混响声能的差异对总声压级的影响更小，从而取得更好的预测精确度，而界面平均吸声系数为0.5时便产生了预测差异的最大值。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_diff_frff_and_image.eps}
+\caption{
+根据镜像声源法的声源和接收点的几何关系图，作者自绘。}\label{fig:chapt_3_diff_frff_and_image}
+\vspace{\baselineskip}
+\end{figure}
+
+\FloatBarrier
+\section{声能空间分布影响因子分析}\label{sec:energy_attenuation_parameter}
+
+从之前的模拟研究中我们可以看到容积、体型比例和界面吸声系数等参数都对大空间中的声能分布有很大的影响，但是由于实测数据有限，这方面具体的分析很难获得较清晰的参数影响规律。因此将采用计算机模拟的方法，对容积、体型比例和界面吸声系数等参数对特大空间声压级衰减规律的影响进行讨论。
+
+\subsection{计算机模拟设置}
+
+计算机模拟仍然使用之前开发的镜像声源法，所模拟的空间主要分为两大类。第一类是正方体空间，这种空间属于理想假设，即长宽高相等，将研究重点放在容积的变化上，但是存在与现实空间缺乏对应的问题；第二类空间为非正方体空间，这一点需要从现实空间中找三维比例确定的依据。
+
+除了一些特殊用途的工厂与教堂之外，通常特大空间建筑的高度不超过$45 m$，因为$45 m$为一些区域的航空限高，超过此高度的建筑物需要进行特殊的审批，所以一般的建筑都在此高度以下，也能够满足实际的使用需求。出于结构形式和结构技术的限制，特大空间的宽度一般也不超过$100 m$，超过$100 m$的空间宽度在结构中很难实现，在现实中也很少遇到这种案例。而对于特大空间有需求的建筑一般通过增加空间长度的方式解决，此种方式对于结构限制不大，甚至能够达到夸张的程度，例如香港国际机场的一号航站楼的长度为$1300 m$左右。一些特大空间的三维尺寸如下所示，长春站为$285 m X 85 m X 35 m$，沈阳站为$220 m X 87 m X 34 m$，昆明滇池国际会展中心$152 m X 62 m X 21 m$，所以虚拟的三维尺寸$300 m X 100 m X 50 m$可以作为一个典型的特大空间体型比例的实例，此时的三维比例为$6:2:1$。如图\ref{fig:chapt_3_model_drawing}所示，分别分析这两种空间比例下的参数影响。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_3_model_drawing-cubic}
+                \includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_model_drawing-cubic.eps}}
+  \subfigure[]{\label{subfig:chapt_3_model_drawing-practical}
+                \includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_model_drawing-practical.eps}}
+  \caption{两种虚拟模型比例。 (a:类型~\uppercase\expandafter{\romannumeral1}; b:类型~\uppercase\expandafter{\romannumeral2}。L: 长度; W: 宽度; H: 高度。 类型~\uppercase\expandafter{\romannumeral1}的比例为(L1: W1: H1): 1: 1: 1; 类型~\uppercase\expandafter{\romannumeral2}的比例为(L2: W2: H2): 6: 2: 1。作者自绘。)}\label{fig:chapt_3_model_drawing}
+\vspace{\baselineskip}
+\end{figure}
+
+一系列长度从$20 m$到$150 m$（20, 40, 60, 80, 100, $150 m$）的两个类型的虚拟模型都进行声压级分布的计算机模拟，每个模型的界面吸声系数从0.1到0.9。每个空间中声源点位于空间中央，高度为$1.5 m$，接收点的高度为$1.2 m$，根据不同的目的进行不同方式的布置。
+
+\subsection{均匀界面吸声}
+
+首先对均匀界面吸声的情况进行了模拟，从降噪的角度来说，不同的界面吸声有不同的降噪效果，为了衡量这种不同界面吸声的影响，接收点被均匀分布在每一个空间中，这样可以得出随距声源距离不同的声压级空间衰减情况。然后将求得的接收点总声压级进行算数平均，作为这个空间的平均噪声评价值。通过比较不同界面吸声时的平均噪声值，评价不同容积空间中增加相同吸声量时的降噪效果。
+
+最终的模拟结果如图~\ref{fig:chapt_3_dif_average_alpha}所示，模拟的空间边长从$20 m$到$100 m$不等，通过对比图中不同吸声系数和容积的空间中的声压级衰减，可以发现不同界面吸声系数时的声压级随距离的衰减变化在不同容积空间中都很明显，由于总声能由混响声能和直达声能通过能量叠加获得，因此总声压级的衰减特性由混响声压级和直达声压级的叠加作用共同产生。结果显示总声压级的衰减总体上呈现出近似指数衰减的特点。
+
+当界面吸声系数增加和容积增大后，声能随距声源距离增加的衰减曲线都呈现出下降的趋势，这是由于这两种变化都会引起混响声能空间分布更加不均匀导致的。衰减曲线越来越接近图中的直达声（Direct）曲线，这也是混响声能减少的证明。
+
+但是，即使空间容积增大到很大的程度，同时界面吸声系数也增大到极端的程度，如图~\ref{fig:chapt_3_dif_average_alpha} 中的c或者f 中的0.7曲线所示，此时总声压级在远声源处仍然比直达声高几个分贝，这说明混响声能仍然占有很大比例。可见混响声能是很难被界面吸声处理完全吸收掉的，在远声源处这种现象更加明显。这点在特大空间中的影响十分重大，因为特大空间中声源众多，如人群噪声、设备噪声等，虽然每种噪声从数值上并不极端，但是每个声音都很难被完全消除，而这些噪声又对整个空间产生影响，当众多声源的影响叠加后，造成特大空间中的噪声严重且处理困难。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_dif_average_alpha_a}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_dif_average_alpha_b}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_b.eps} }\\
+		{\label{subfig:chapt_3_dif_average_alpha_c}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_c.eps} }
+		{\label{subfig:chapt_3_dif_average_alpha_d}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_d.eps} }\\
+	    {\label{subfig:chapt_3_dif_average_alpha_e}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_e.eps} }
+		{\label{subfig:chapt_3_dif_average_alpha_f}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_dif_average_alpha_f.eps} }
+		\caption{ \label{fig:chapt_3_dif_average_alpha} 不同界面吸声时的声压级随距声源距离的衰减。 (类型~\uppercase\expandafter{\romannumeral1}: a表示空间三维尺寸为$20 m X 20 m X 20 m$; b 表示空间三维尺寸为 $60 m X 60 m X 60 m$; c 表示空间三维尺寸为$100 m X 100 m X 100 m$. 类型~\uppercase\expandafter{\romannumeral2}: d 表示空间三维尺寸为$20 m X 60 m X 10 m$; e 表示空间三维尺寸为$60 m X 180 m X 30 m$; f 表示空间三维尺寸为$100 m X 300 m X 50 m$。作者自绘。)}
+	\end{center}
+\end{figure}
+
+敷设吸声材料是降低噪声的直接方法，也是现在吸声降噪普遍采用的手段。采用增加界面吸声的方式降低噪声，其降噪效果可以使用下式评估，处理前后降低的声压级
+
+\begin{eqnarray}
+\label{eq:noise_reduction_alpha}
+\Lambda SPL=10\log _{10} \frac{A_{2}}{A_{1}}
+\end{eqnarray}
+
+其中，$A_1$是处理前的界面总吸声量（$m^2$）；$A_2$是处理后的界面总吸声量（$m^2$）；这个公式意味着当增加的界面吸声量加倍时，其降噪效果应该增加某个固定值，即二者为固定的指数关系。此公式的依据为扩散声场假设，此时混响声能空间分布均匀。
+
+随着界面平均吸声系数的增加，在不同空间中平均声压级变化如图~\ref{fig:chapt_3_types_noise_reduction_alpha}所示，结果显示随着界面平均吸声系数的变化，声压级的下降趋势为近似线性，特别是空间变大后线性趋势更加明显。之前已经讨论过，根据扩散声能假设，混响声能是空间均布的，即与距声源距离无关，而根据球面波的传播规律，直达声随着距声源距离的增加指数衰减，因此直达声的传播规律与界面吸声系数的变化无关。总声压级作为二者声能的叠加， 其衰减曲线的形态为近似线性，这表明在特大空间中，总声能的两个组成部分，直达声能和混响声能都占有很重要的地位，二者共同形成了线性衰减的特性，这一点值得深入研究。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_3_type1_noise_reduction_alpha}
+                \includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_type1_noise_reduction_alpha.eps}}
+  \subfigure[]{\label{subfig:chapt_3_type2_noise_reduction_alpha}
+                \includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_type2_noise_reduction_alpha.eps}}
+  \caption{在不同空间中，随着界面平均吸声系数的增加空间中的平均声压级变化。 (a: 在类型~\uppercase\expandafter{\romannumeral2}的空间中;  b: 在类型~\uppercase\expandafter{\romannumeral2}的空间中。 声压级为空间中所有均匀布置的测点的总声压级数值平均值，作为评价空间中噪声情况的单值量。由于两种类型空间三维比例固定，因此空间大小以宽度表示。作者自绘。}\label{fig:chapt_3_types_noise_reduction_alpha}
+\vspace{\baselineskip}
+\end{figure}
+
+但是，当空间容积较小且界面吸声系数低的情况下，声压级随界面吸声系数的变化也出现了一些指数的趋势，这一点在类型~\uppercase\expandafter{\romannumeral1}（空间宽度小于等于$60 m$时）和类型~\uppercase\expandafter{\romannumeral2}（空间宽度小于等于$60 m$时）的空间中都有所体现。这说明当空间容积不是很大，界面吸声系数也不高的情况下，增加相同的吸声量比其他情况能够降低更多的噪声。当空间增大或者界面吸声系数提高以后，降噪曲线趋于平直，此时在空间中均匀增加相同的吸声量所降低的噪声值为定值。
+
+对图~\ref{fig:chapt_3_types_noise_reduction_alpha}中的衰减曲线进行进一步分析，对其中的降噪曲线取线性回归，结果如表~\ref{tab:chapt_3_regression_noise_reduction}所示，结果显示随着空间容积的增长，降噪曲线的斜率数值随之降低，在类型~\uppercase\expandafter{\romannumeral1} 中，从-10.02降低到-7.95，在类型~\uppercase\expandafter{\romannumeral2} 中，从-14.6降低到-11.49。这意味着在特大空间中即使采用增加相同比例吸声量的方法，降低噪声也比较困难。从另一个角度来说，这也解释了为什么在特大空间中降低人群噪声如此困难。
+
+\begin{table}[!htb]
+\centering
+\caption{不同容积下的降噪曲线线性回归}
+\label{tab:chapt_3_regression_noise_reduction}
+\vspace{0.5em}\centering\wuhao
+\begin{tabular}{cccccccc}
+\toprule[1.5pt]
+\multirow{2}{*}{空间类型}                                               & \multirow{2}{*}{回归结果} & \multicolumn{6}{c}{空间宽度(m)}                         \\
+                                                                    &                                   & 20     & 40     & 60     & 80     & 100    & 150    \\ \midrule[1pt]
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral1}} & 斜率                             & -10.02 & -9.93  & -9.53  & -9.11  & -8.73  & -7.95  \\
+                                                                    & $R^2$                                & 0.954  & 0.971  & 0.98   & 0.986  & 0.989  & 0.995  \\
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral2}} & 斜率                             & -14.6  & -14.06 & -13.46 & -12.93 & -12.46 & -11.49 \\
+                                                                    & $R^2$                                & 0.974  & 0.982  & 0.986  & 0.99   & 0.992  & 0.995  \\
+\bottomrule[1.5pt]
+\end{tabular}
+\vspace{\baselineskip}
+\end{table}
+
+\subsection{不均匀界面吸声}
+
+对不均匀界面吸声的情况也进行了模拟研究，在通常形式的建筑中，界面可以被分为三部分，即天花板、墙面和地面。这些界面可能会被敷设不同量的吸声材料来达到不同的声学处理目的。在特大空间中，这通常是出于吸声降噪的目的。在特大空间中，不同的布置位置，其吸声降噪的作用是否一致还有待研究。
+
+本文将使用计算机模拟的方法对此进行研究，一系列不同容积的初始空间被赋予0.1的初始吸声系数，然后在不同位置上均匀增加一定的吸声量，模拟计算此时空间中各测点的平均声压级下降量，通过对比对不同部位的吸声效果进行评价。增加的吸声量根据地面面积乘以0，0.1，0.2，0.3，0.4，0.5，0.6共七个吸声系数来计算。分别增加在天花板、墙面和地面。两种类型的空间都分别进行了计算，由于三个位置的面积并不完全相同，因此增加相同面积的吸声量后，最终不同位置的界面吸声系数也并不相同，两种类型的最终吸声量如下表~\ref{tab:chapt_3_final_alpha_at_dif_position}所示，增加的吸声量以吸声系数表示。
+
+\begin{table}[!htb]
+\centering
+\caption{两种类型中不同界面位置的最终平均吸声系数。}
+\label{tab:chapt_3_final_alpha_at_dif_position}
+\vspace{0.5em}\centering\wuhao
+\begin{tabular}{ccccccccc}
+\toprule[1.5pt]
+\multirow{2}{*}{空间类型}                                               & \multirow{2}{*}{位置} & \multicolumn{7}{c}{增加的吸声量（以吸声系数表示）}                         \\
+                                                                    &                                   & 0     & 0.1     & 0.2     & 0.3     & 0.4    & 0.5  & 0.6  \\ \midrule[1pt]
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral1}} & 天花板和地面                             & 0.1 & 0.2  & 0.3  & 0.4  & 0.5  & 0.6  & 0.7  \\
+                                                                    & 墙面                                & 0.1	  & 0.125	  & 0.15	 & 0.175	    & 0.2	 & 0.225	& 0.25   \\
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral2}} & 天花板和地面                             & 0.1	  & 0.2	 & 0.3	 & 0.4	&0.5&	0.6	&0.7 \\
+                                                                    & 墙面                               & 0.1	&0.175	&0.25	&0.325	&0.4&	0.475	&0.55  \\
+\bottomrule[1.5pt]
+\end{tabular}
+\vspace{\baselineskip}
+\end{table}
+
+模拟结果如图~\ref{fig:chapt_3_types_alpha_dif_position}所示，在不同部位布置吸声材料对降噪均有不同程度的效果，针对不同空间中增加不同吸声量的降噪曲线进行线性回归，结果如表~\ref{tab:chapt_3_types_alpha_dif_position_regression} 所示。在类型~\uppercase\expandafter{\romannumeral1}中，增加相同的吸声量，加在地面比加在其他部位有更好的降噪效果，后两者中加在墙面的降噪效果略好于加在天花板。随着空间容积的增加，虽然地面降噪曲线和天花板降噪曲线都整体趋于平缓，但是二者的最大差异却逐渐增大。这说明随着空间容积的增加，三个部位的降噪效果都有所降低，但是地面吸声的降噪优越性反而更加突出。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_type1_alpha_dif_position_a}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_alpha_dif_position_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_type1_alpha_dif_position_b}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_alpha_dif_position_b.eps} }\\
+		{\label{subfig:chapt_3_type1_alpha_dif_position_c}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_alpha_dif_position_c.eps} }
+		{\label{subfig:chapt_3_type2_alpha_dif_position_a}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_alpha_dif_position_a.eps} }\\
+	    {\label{subfig:chapt_3_type2_alpha_dif_position_b}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_alpha_dif_position_b.eps} }
+		{\label{subfig:chapt_3_type2_alpha_dif_position_c}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_alpha_dif_position_c.eps} }
+		\caption{ \label{fig:chapt_3_types_alpha_dif_position} 当一系列不同的吸声量增加到不同的位置后，空间中各测点的平均声压级变化。 (类型~\uppercase\expandafter{\romannumeral1}: a表示空间三维尺寸为$20m X 20m X 20m$; b 表示空间三维尺寸为 $60m X 60m X 60m$; c 表示空间三维尺寸为$100m X 100m X 100m$。 类型~\uppercase\expandafter{\romannumeral2}: d 表示空间三维尺寸为$20m X 60m X 10m$; e 表示空间三维尺寸为$60m X 180m X 30m$; f 表示空间三维尺寸为$100m X 300m X 50m$。作者自绘。)}
+	\end{center}
+\end{figure}
+
+\begin{table}[!htb]
+\centering
+\caption{不同空间中增加不同吸声量的降噪曲线线性回归结果。}
+\label{tab:chapt_3_types_alpha_dif_position_regression}
+\vspace{0.5em}\centering\wuhao
+\begin{tabular}{ccccccccccc}
+\toprule[1.5pt]
+\multirow{3}{*}{空间类型}       & \multirow{3}{*}                                                                & \multicolumn{9}{c}{空间宽度 (m)}                         \\
+                                                                                                        & \multicolumn{3}{c}{20}  & \multicolumn{3}{c}{60}  & \multicolumn{3}{c}{100} \\ \midrule[1pt]
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral1}}       	                                    &地面	& 墙面	&天花板	&地面	&墙面	&天花板	&地面	&墙面	&天花板 \\
+                                                                    &斜率	                            &-4.63	&-3.37	&-3.19	&-4.15	&-2.53	&-2.30	&-3.76	&-2.01	&-1.72   \\
+                                                                    &$R^2$	                            & 0.999	&0.992	&0.993	&1.000	&0.996	&0.997	&1.000	&0.998	&0.998  \\
+\multirow{2}{*}{类型~\uppercase\expandafter{\romannumeral2}}        &斜率                                &-5.53	&-7.48	&-4.33	&-4.74	&-5.95	&-3.20	&-4.23	&-4.99	&-2.51 \\
+                                                                    &$R^2$                               &0.999	&0.984	&0.995	&1.000	&0.993	&0.998	&1.000	&0.997	&0.999 \\
+
+\bottomrule[1.5pt]
+\end{tabular}
+\vspace{\baselineskip}
+\end{table}
+
+
+
+
+
+而在类型~\uppercase\expandafter{\romannumeral2}中，增加相同的吸声量，加在墙面比加在其他部位有更好的降噪效果，后两者中加在地面的降噪效果好于加在天花板。随着空间容积的增加，地面降噪曲线和天花板降噪曲线都整体趋于平缓，而且三个部位之间的差距也逐渐缩小，这说明三个部位的降噪效果随着空间容积的增加逐渐趋近。其中随着容积的增加，地面降噪曲线从接近天花板逐渐下降至接近墙面，说明在类型Ⅱ的特大空间中，地面也拥有很好的降噪效果。
+
+从表~\ref{tab:chapt_3_types_alpha_dif_position_regression}中还能看出在两种类型中，所有的线性回归的确定系数$R^2$也都很高，从0.954到0.995，线性趋势十分明显，这是否能从理论上进行阐释还需要后续进一步研究。
+
+因为图~\ref{fig:chapt_3_types_alpha_dif_position}中不同部位的降噪曲线的确定系数都很高，因此可以直接使用回归曲线的斜率代表不同位置的降噪效果，越陡的斜率代表越好的降噪效果。结果与上节中均匀增加吸声材料的结论类似，随着空间容积的增加，不同部位增加同样比例的吸声材料，其降噪效果还是都出现了下降的趋势，这再一次表明大空间降噪的困难程度。例如对于类型~\uppercase\expandafter{\romannumeral1}中的地面来说，当容积从$8000 m^3$增加至$1000000 m^3$ 时，降噪曲线的斜率从 -4.63 变为 -3.76。对于类型Ⅱ中的墙面来说,当容积从$12000 m^3$增加至$1500000 m^3$，降噪曲线的斜率从 -7.48 变为 -4.99。 这也说明了通过增加界面吸声的方式降低特大空间中的噪声存在局限，这种局限性随着空间容积的增加变得越来越明显。
+\FloatBarrier
+\subsection{空间高度}
+
+不同空间类型的建筑高度通常都各不相同，这主要是由建筑功能和结构技术共同决定的。在本节中，将进行不同高度比例对空间中平均声压级的影响作用的讨论。在之前章节中讨论过的初始模型的基础上，对模型赋予不同的高度比例系数$\beta$（0.25, 0.5, 1, 2, 4），其他两个维度的尺寸保持不变，即新的模型高度
+
+\begin{eqnarray}
+\label{eq:model_height}
+H_m = \beta H
+\end{eqnarray}
+
+其中$H$为初始模型高度。则可知在类型~\uppercase\expandafter{\romannumeral1}中，高度系数0.25和0.5表示生成的空间为扁平空间，这与现实中的一些办公空间和工厂空间类似。高度系数2和4 则表示生成的空间为高耸空间，这与现实中的一些中庭空间和教堂空间类似。在类型~\uppercase\expandafter{\romannumeral2}中，不同的高度系数生成的空间均表示不同的扁平空间或者近似扁平空间。空间中的平均声压级仍然是通过均布的10排10列的测试点求出，测试点和接收点的设置与之前章节中的模拟相同。
+
+结果如图~\ref{fig:chapt_3_type1_dif_height}和~\ref{fig:chapt_3_type2_dif_height}所示，两图分别代表不同类型空间中的结果，不同的曲线表示被赋予不同高度系数的空间，例如，曲线1表示在初始空间中。在两种类型的空间中，都发现了一些近似的规律。首先，不同高度比例的空间中，声能衰减的程度各不相同，但是各条曲线差异最大的地方通常都出现在远声源处。这种现象在空间容积变大后更加明显，这表明随着空间容积的变大，声场的不扩散程度进一步增强。其次，容积的增长改变了衰减曲线的形状，使他们更加的趋向于指数衰减。这是由于随着空间容积的增加，混响声能相对与直达声变得占比更低的原因。另一个现象也是由于混响声能占比降低造成的，对于同一个初始空间来说，当界面吸声系数增大时，不同高度产生的衰减曲线差异也逐渐缩小。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_type1_dif_height_a}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_type1_dif_height_b}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_b.eps} }\\
+		{\label{subfig:chapt_3_type1_dif_height_c}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_c.eps} }
+		{\label{subfig:chapt_3_type1_dif_height_d}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_d.eps} }\\
+	    {\label{subfig:chapt_3_type1_dif_height_e}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_e.eps} }
+		{\label{subfig:chapt_3_type1_dif_height_f}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type1_dif_height_f.eps} }
+		\caption{ \label{fig:chapt_3_type1_dif_height} 类型~\uppercase\expandafter{\romannumeral1}中不同高度系数的空间中声能随距声源距离衰减曲线（初始模型的容积（$m^3$） - 界面吸声系数，a: 12,000-0.1； b: 768,000-0.1； c: 5,062,500-0.1； d: 12,000-0.5； e: 768,000-0.5； f: 5,062,500-0.5。作者自绘。）}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_type2_dif_height_a}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_dif_height_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_type2_dif_height_b}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_dif_height_b.eps} }\\
+		{\label{subfig:chapt_3_type2_dif_height_c}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_dif_height_c.eps} }
+		{\label{subfig:chapt_3_type2_dif_height_d}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_dif_height_d.eps} }\\
+	    {\label{subfig:chapt_3_type2_dif_height_e}\includegraphics[width=0.45\textwidth]{phd_figures/chapt_3_type2_dif_height_e.eps} }
+		{\label{subfig:chapt_3_type2_dif_height_f}\includegraphics[width=0.48\textwidth]{phd_figures/chapt_3_type2_dif_height_f.eps} }
+		\caption{ \label{fig:chapt_3_type2_dif_height} 类型~\uppercase\expandafter{\romannumeral2}中不同高度系数的空间中声能随距声源距离衰减曲线（初始模型的容积（$m^3$） - 界面吸声系数，a: 12,000-0.1； b: 768,000-0.1； c: 5,062,500-0.1； d: 12,000-0.5； e: 768,000-0.5； f: 5,062,500-0.5。作者自绘。）}
+	\end{center}
+\end{figure}
+
+两种类型空间的衰减曲线计算结果中，还是能够发现一些不同的地方，首先，类型~\uppercase\expandafter{\romannumeral2}中的声压级衰减曲线相较于类型~\uppercase\expandafter{\romannumeral1}中，更加趋向于指数衰减，特别是在近声源区域，这种现象更加明显，这主要是由于两种类型的空间比例不同导致的，初始空间越接近于扁平空间，则其对高度变化越敏感。其次，衰减曲线对于高度成比例变化的敏感性不同，在类型~\uppercase\expandafter{\romannumeral1}的空间中，衰减曲线从初始空间开始对压扁更加敏感，即小于1的高度系数能够引起更大的声压级变化。而在类型~\uppercase\expandafter{\romannumeral2}的空间中，衰减曲线从初始空间开始对拉升更加敏感，即大于1的高度系数能够引起更大的声压级变化。
+
+为了衡量不同空间中对于高度成比例变化的敏感性，由于空间的对称性，在空间的四分之一部分均匀布置10排10列的接收点并对求得的声压级数据进行数值平均，以求得空间中的平均声压级情况。结果如图   所示，两种不同类型的空间中，不同界面吸声系数的情况下，不同高度的声压级变化规律基本相同。变化规律为：当高度比例大于1时，衰减曲线呈现出近似线性的特点，即当高度成比例降低时，声压级的变化值为定值。这一规律在两种类型的空间中都是如此。
+
+\begin{figure}[!htb]
+	\begin{center}
+		{\label{subfig:chapt_3_spl_height_type1_a}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type1_a.eps}} 				% eps file
+		{\label{subfig:chapt_3_spl_height_type1_b}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type1_b.eps} }\\
+		{\label{subfig:chapt_3_spl_height_type1_c}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type1_c.eps} }
+		{\label{subfig:chapt_3_spl_height_type2_d}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type2_d.eps} }\\
+	    {\label{subfig:chapt_3_spl_height_type2_e}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type2_e.eps} }
+		{\label{subfig:chapt_3_spl_height_type2_f}\includegraphics[width=0.4\textwidth]{phd_figures/chapt_3_spl_height_type2_f.eps} }
+		\caption{ \label{fig:chapt_3_spl_height_types} 不同高度比例和界面吸声系数的空间中的平均声压级。（X轴为对数坐标轴。子图为不同类型空间及其对应的界面吸声系数，a: 类型~\uppercase\expandafter{\romannumeral1}-0.1; b: 类型~\uppercase\expandafter{\romannumeral1}-0.3; c: 类型~\uppercase\expandafter{\romannumeral1}-0.5; d: 类型~\uppercase\expandafter{\romannumeral2}-0.1; e: T类型~\uppercase\expandafter{\romannumeral2}-0.3; f: T类型~\uppercase\expandafter{\romannumeral2}-0.5。作者自绘。）}
+	\end{center}
+\end{figure}
+
+当高度比例小于1时，衰减曲线呈现出不同的变化特点，容积较小的空间中，高度能够引起较多的声压级变化，当然从图中我们也可以看出此时的变化斜率小于高度比例大于1时的情况。而当容积变大后，变化趋势更加趋于平缓。这表示此时高度的成比例增长所引起的声压级数值变化更小。
+
+对于不同的的界面吸声系数来说，总的趋势是界面吸声系数越高，高度成比例变化的效果就越不明显，在两种类型的空间中都是如此。这可以从混响声能的角度予以解释，当界面吸声系数增加以后，混响声能更多的被界面所吸收，此时高度的变化引起的混响声能的变化自然更小。
+
+两种类型的空间中，当类型~\uppercase\expandafter{\romannumeral1}中的边长为$150 m$和类型~\uppercase\expandafter{\romannumeral2}中的宽度为$150 m$，高度变化比例为0.25时，声压级差异都有很大的变动，在这两种类型的空间中都有如此规律，类型Ⅱ中的规律更加明显，这一点还缺乏有说服力的解释，需要得到进一步的研究。
+
+\subsection{空气吸声}
+
+虽然当空间容积变大后，特大空间声场的不扩散性已经得到广泛的认同，但是我们仍然可以利用扩散假设进行一些有用的定性分析。根据扩散声场假设，我们可以求出空间中的平均自由程，它与空间容积呈正相关关系，因此随着空间容积的增加，平均自由程也随之变大，则空间中随之产生的空气吸收也随之增加。本节将对特大空间中的空气吸收进行讨论。
+
+空气吸声比例的获得有两种计算方法，一种是理论计算，例如混响时间计算时的空气吸收项$4mV$，另一种方法为之前的章节中所采用的计算机模拟的方法，这种方法相对于第一种更加适用于非扩散的声场环境，本文将采用镜像声源法对特大空间中的空气吸声进行研究。模拟的设置及测点的布置与之前章节相同，在此就不再一一赘述。模拟的空间边长大于$500 m$以从理论角度讨论更多的情况。
+
+模拟计算了不同容积和界面吸声系数的情况下，正方体空间中的空气吸收占总声能吸收的比例。每个测点的空气收比例都进行了预测，以得到随距声源距离的变化规律。所有的空气吸收都以$2000 Hz$的空气吸收系数为计算依据，这个倍频程与人的语言声频率接近，也被多次用于空气吸声的比较。
+
+计算结果如图~\ref{fig:chapt_3_five_model_2kHz_absorption_coefficient}所示，空气吸声在大部分的空间中都占有重要的比例，特别是当空间容积增大后这一现象更加明显。当空间容积大于$127000000 m^3$（此时立方体边长为$300 m$）时，空气吸收的比例随着距声源距离的增加先快速上升然后缓慢下降。当界面吸声系数为0.1时，边长为$500 m$的空间中曲线最高点出现在距声源约$50 m$处，边长为$300 m$的空间中曲线最高点出现在距声源约$27 m$处。当界面吸声系数变化时，这个最高点出现的位置变化很少，当界面吸声系数为0.5 时，最高点出现的位置分别为$56 m$（边长为$500 m$的空间）和$37 m$ （边长为$300 m$的空间）。考虑到我们之前章节中已经讨论过的早期反射声的重要作用，这种先上升后下降的特点主要是由于早期反射声的空气吸声造成的。在近声源处，直达声和早期反射声占总声能的主要部分，其空气吸收与距声源距离呈正相关关系，因此快速上升。随着距声源距离的增加，早期反射声所占的比例降低，空气吸收的比例也随之缓慢降低。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_3_five_model_2kHz_absorption_coefficient-01}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_five_model_2kHz_absorption_coefficient-01.eps}}\\
+  \subfigure[]{\label{subfig:chapt_3_five_model_2kHz_absorption_coefficient-05}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_five_model_2kHz_absorption_coefficient-05.eps}}
+  \caption{不同容积空间中空气吸声占总声能吸收的比例。（水平虚线表示不同空间中的艾润公式预测值。a表示各空间的界面吸声系数为0.1；b表示各空间的界面吸声系数为0.5。作者自绘。）}\label{fig:chapt_3_five_model_2kHz_absorption_coefficient}
+\vspace{\baselineskip}
+\end{figure}
+
+对公式计算的空气吸声和计算机模拟的空气吸声也进行了比较，结果显示随着空间增大，二者差异逐渐增大，如平均吸声系数为0.3时，二者差异（公式-模拟）从$0.3 dB$（空间边长为$10 m$）增加至$3.5 dB$(空间边长为$500 m$)；随着平均吸声系数的增加，二者计算的结果差异减小，如图~\ref{fig:chapt_3_dif_equation_image}所示。室内声压级计算公式在近声源处（大约$2 m$ 以内）由于直达声占主导地位，计算误差在$1 dB$以内；在中段距离，随着混响声能对直达声越来越占优势，公式值小于模拟值；在远声源处混响声能被过多的考虑了，因此公式值大于计算值。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_3_dif_equation_image_03}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_dif_equation_image_03.eps}}\\
+  \subfigure[]{\label{subfig:chapt_3_dif_equation_image_07}
+                \includegraphics[width=0.7\textwidth]{phd_figures/chapt_3_dif_equation_image_07.eps}}
+  \caption{经典公式与虚声源法比较。（a:平均吸声系数为0.3时的不同大小空间；b:平均吸声系数为0.7时的不同大小空间。作者自绘。）}\label{fig:chapt_3_dif_equation_image}
+\vspace{\baselineskip}
+\end{figure}
+\FloatBarrier
+\section{本章小结}
+本章的研究目的为探索特大空间声场中的声能分布，通过实地测试、计算机模拟和理论预测等手段，得出了大空间声场中的声能分布规律，并建立了相应的预测模型。
+
+特大空间中，总声压级和混响声压级随距离的衰减曲线均出现了接近指数的衰减形状，而且这种趋势在近声源范围内更加明显，在远声源处，曲线逐渐趋于线性。通过计算机模拟分析，可知其形成的主要原因在于早期反射声，其中地面一次反射声十分重要。
+针对地面一次反射声的重要性，开发了针对于特大空间声压级预测的预测公式，经过实测和模拟的验证具有良好的适用性，特别适用于特大空间中的声压级预测。
+
+针对影响特大空间声压级空间分布的声学参数进行了研究，发现（1）当空间容积不是很大，界面吸声系数也不高的情况下，增加相同的吸声量比其他情况能够降低更多的噪声。当空间增大或者界面吸声系数提高以后，在空间中均匀增加相同的吸声量所降低的噪声值为定值。通过增加界面吸声来降低空间中的噪声的方法效果是存在上限的，这种局限性随着空间容积的增加变得越来越明显；（2）针对不同位置布置吸声材料，其降噪效果不同，而且受体型比例影响，在正方体的特大空间中，吸声材料布置在地面效果最好，墙面次之，天花板效果最差。而在$2:6:1$的特大空间中，墙面的效果最好，地面次之，天花板仍然效果最差。（3）空间高度不同的特大空间，其中的噪声严重程度不同。当高度比例大于1 时，当高度成比例降低时，声压级的变化值为定值。当高度比例小于1 时，容积较小的空间中，高度能够引起较多的声压级变化。而当容积变大后，高度的成比例增长所引起的声压级数值变化更小。（4）空气吸声在特大空间中占有重要的比例。在近声源处，空气吸声占比快速上升。随着距声源距离的增加，空气吸收的比例也随之缓慢降低。

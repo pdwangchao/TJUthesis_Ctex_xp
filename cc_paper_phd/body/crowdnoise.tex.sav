@@ -1,0 +1,447 @@
+% !Mode:: "TeX:UTF-8"
+
+\chapter{特大空间人群噪声特点及其预测}
+
+本章研究旨在研究特大空间中的人群噪声特点，通过实地测试和理论预测等手段，得出大空间声场中的人群分布规律，并建立相应的预测模型。本章首先在长春站进行了人群噪声空间分布的实地测试；然后对影响人群噪声的一些因素进行了研究，如说话比例、人群声功率、界面总吸声量、遮挡物；最终根据人群噪声的特点和之前对特大空间声场的研究，提出了一个新的特大空间人群噪声预测模型，并利用长春站的测试数据进行了模型准确性的验证。
+
+通过研究特大空间中的人群噪声并建立其预测模型，可以有针对性地进行相应的建声设计、电声设计、声音引导疏散设计、噪声控制，具有十分重要的理论意义和现实意义。
+
+
+\section{1.1 人群噪声实测}
+
+本节研究旨在通过实测了解特大空间中的人群噪声时域变化。测试场地为长春站候车厅。通过测试可以对大空间中的人群噪声时域变化有直观准确的了解，测试结果还可以用于验证理论预测的准确性。
+
+\subsection{实地测试}
+本文选取了长春站来进行实地测试，以了解特大空间中的人群噪声随着候车厅人数变化的时域变化规律。长春站平面图如下图~\ref{fig:chapt_4_changchun_CAD}所示，平面为长方形，两侧长边及一侧短边有回廊但是很少有人停留，候车厅平面尺寸为$\rm 218 m X 107 m$（考虑三边回廊投影面积），候车厅高点高度为$\rm 37 m$，梁下高度为$\rm 31 m$，候车厅容积约为$\rm 793000 m^3$。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_changchun_CAD.eps}
+\caption{长春站平面图示意及测点位置。作者自绘。}\label{fig:chapt_4_changchun_CAD}
+\vspace{\baselineskip}
+\end{figure}
+
+a）	测试环境描述：测试现场为候车厅非春运期间的正常运营时间；测试周期为上午$\rm 4:20$至晚上$\rm 10:30$，共约20个小时，此阶段为人数较多时间，$\rm 10:30$以后人数较少，且有多台地面清扫车出现，噪声较大，放弃测试。故选择此时间段进行测试。候车厅基本为封闭空间，仅有两侧短边有进出口与其他空间相连，以及检票时间有检票口与外界相连。测试现场空调系统处于开启状态，空调位置为两侧检票口。测试期间室内温度为$\rm 16^{\circ}$C，空气湿度为$\rm 30\%$。
+
+b）	测试设备：测试中所用仪器为一级精度的手持式声级计，型号为AWA6228型多功能声级计，离地高度为$\rm 1.5m$。
+
+c）	测点分布：见图~\ref{fig:chapt_4_changchun_CAD}中测点所示，由于设备和测试人员限制，为了使测试更加可行，竖向四个测试点安排一个测试人员，每个点测量$\rm 1.5 min$，以$\rm 10 min$为一周期。
+
+d）	测试指标：各中心频率的$\rm 1.5 min$A计权等效声压级值（$\rm L_{Aeq,1.5 min}$）。
+
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_4_changchun_fukan_20180120045126}
+                \includegraphics[width=0.47\textwidth]{phd_figures/chapt_4_changchun_fukan_20180120045126.eps}}
+  \subfigure[]{\label{subfig:chapt_4_changchun_fukan_20180120160230}
+                \includegraphics[width=0.47\textwidth]{phd_figures/chapt_4_changchun_fukan_20180120160230.eps}}
+  \caption{不同时间段的长春站人群分布状况（a:上午4点51分；b:下午16点02分。作者自绘。）}\label{fig:chapt_4_changchun_fukan}
+\vspace{\baselineskip}
+\end{figure}
+
+\subsection{实测结果分析}
+
+实测结果较多，以测点1，5，9，13，17为例显示整个候车厅全天（早4点20分至晚10点30分）的噪声情况，人群噪声无论在时间还是空间范围内都呈现出剧烈波动的状态，但总体的趋势还是很明显，呈现出随着时间先上升后下降在趋势，这与长春站候车厅的运营状况相吻合，候车厅的主要使用时间为早7点至晚7点，这段时间噪声比较严重。
+
+大部分测点的噪声水平处于$\rm 65 dBA$以上，对短期停留的旅客健康影响不大，但是对于候车厅的工作人员来说，还是存在着一些潜在的健康风险。
+
+另根据现场观察，现场噪声水平没有达到极端情况的原因之一在于候车旅客大多处于以玩电子设备为主的休闲娱乐之中，交流欲望和交流比例并不高，但是如果出现一些特殊情况，例如出现险情等突发状况，旅客互相之间交流信息的愿望大增，将造成噪声水平在现有的基础上迅速上升。正是因为人群噪声的这些特点，对特大空间的人群噪声的深入研究是十分必要的。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_noise_time_hall.eps}
+\caption{候车厅内噪声声压级随时间变化，作者自绘。}\label{fig:chapt_4_noise_time_hall}
+\vspace{\baselineskip}
+\end{figure}
+\FloatBarrier
+\section{人群噪声影响因素}
+
+人群噪声预测的难点在于影响因素过多，能否有效地确定各个因素与人群噪声的关系，决定了人群噪声预测模型的精确度。在特大空间的人群噪声预测模型中，以下影响因素作为预测模型的重要参数，将分别进行讨论。
+
+\subsection{人数}
+
+在特大空间中得到准确的人数统计十分困难，受到设备和技术水平的限制，最常用的方法是通过拍摄器材拍摄空间中的照片，然后统计照片中的人数。
+
+获取候车厅照片也有几种方式，一种是通过广角相机拍摄大厅中的整体照片，本文通过预实验发现很难得到足够清晰度的照片，图片中远处的人看上去十分模糊以至于很难辨认，最终采取的方式为借助于候车厅中座席区，如图~\ref{fig:chapt_4_changchun_CAD} 所示，以座席区为划分依据，将候车厅长边单侧分为7个区域，从两侧二楼使用清晰度较高的手机对每个区域分别进行拍照，以10分钟为一周期，如图4-4所示。最终对两侧14张照片中的预设区域进行人数统计，忽略10分钟以内的人数波动，以得到10 分钟内的大厅中的总人数。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_4_2floor_1}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_2floor_1}}
+  \subfigure[]{\label{subfig:chapt_4_2floor_2}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_2floor_2.eps}}\\
+   \subfigure[]{\label{subfig:chapt_4_2floor_6}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_2floor_6.eps}}
+  \subfigure[]{\label{subfig:chapt_4_2floor_7}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_2floor_7.eps}}
+  \caption{ 从二楼针对候车厅分区拍照（每一边一个周期内拍照7张，仅以其中4张照片为例，a、b、c、d 分别为7张中的第1、2、6、7张。作者自绘。）}\label{subfig:chapt_4_2floor}
+\vspace{\baselineskip}
+\end{figure}
+
+如何对图片中的人数进行统计也有多种方法，针对现有图像识别技术进行研究，发现现有的成熟模型识别率仅有$\rm 80\%$左右，达不到足够的精度。而精度足够的模型需要较长的训练时间以及大量的模型优化和参数设置，从效率上来说并无明显优势，因此本文中使用手持式计数器进行每张照片的人数统计。
+
+首先对20个小时内的人数变化进行统计，结果如图~\ref{fig:chapt_4_pnumber_time}所示。结果显示，长春站从上午4点半开始人数就一直在快速增加，至上午7点至8点人数约有所下降，9点开始人数又开始迅速增加，并迅速达到一天的最大值，候车厅中的总人数大致在4000人至5000人之间，之后开始高负荷的不同波动，根据现场观察人数波动为列车发车时间间隔较短导致，人数众多的状态一直维持到下午4点半左右，在经历最后一波人数高峰后迅速下降。晚间在九点还有一小波人数高峰，之后便缓慢下降。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_pnumber_time.eps}
+\caption{长春站候车厅人数随时间变化，作者自绘。}\label{fig:chapt_4_pnumber_time}
+\vspace{\baselineskip}
+\end{figure}
+
+候车厅人数的数据与图~\ref{fig:chapt_4_train_time}中长春站发车各车次发车时间基本吻合，可以看出每当有较远终点站的车次大量发车以后，候车厅噪声就经历一波下降的趋势，而如果长时间没有远车发车，则会积攒较多的候车人数，候车厅噪声也随之上升。三者的趋势互相印证，更加揭示了候车厅噪声中人群噪声的比例之大。
+
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_train_time.eps}
+\caption{长春站发车各车次发车时间及其终点站里程，作者自绘，数据来源为网站http://search.huochepiao.com/chezhan/changchun。}\label{fig:chapt_4_train_time}
+\vspace{\baselineskip}
+\end{figure}
+
+
+将候车厅内的人数与候车厅内的声压级数据通过时间进行了一一对应，最终形成二者的关系图如图~\ref{fig:chapt_4_pnumber_spl_changchun}所示。明显的线性趋势也表明了之前说的候车厅噪声与人数的正相关关系。
+
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_pnumber_spl_changchun.eps}
+\caption{候车厅内各测点平均声压级随着人数变化的变化趋势，作者自绘。}\label{fig:chapt_4_pnumber_spl_changchun}
+\vspace{\baselineskip}
+\end{figure}
+
+
+
+\subsection{交谈比例}
+
+在不同的空间中，人们有不同的说话意愿，在餐厅的研究中发现人们在就餐过程中十分热衷于交谈，其说话比例约为三分之一~\cite{hodgson2007measurement}。但是在候车厅中显然并非如此，候车厅属于休息等待空间，根据现场观察，更多的人倾向于闭目养神、玩电子产品或者吃一些零食。因此确定大型候车厅中的平均交谈比例，有助于特大空间中人均声功率确定、人群噪声的预测以及了解特大空间中人的行为模式。
+
+本研究通过录像的方法进行了相应的研究，从二楼对座席区进行高清晰度的录像，然后从视觉角度判断其说话时间，利用python语言开发了一个统计的小程序，对每个人的说话时间和停留总时间进行了统计。统计总人数为85人。
+结果如下图所示，交谈的人占比较小，且说话比例分布并没有集中在某一个比例范围附近，呈现较均匀的下降趋势。经过统计，说话人数仅占总人数的$23.5\%$，可见在候车过程中，大部分人还是倾向于保持沉默而不是互相交流。从持续时间上对所有旅客的说话总时间和停留总时间进行了统计，最终得出长春站候车旅客的交谈比例为$\rm 5.72\%$。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_people_talking_ratio.eps}
+\caption{长春站候车厅旅客说话比例统计（将旅客按交谈时间排序并编号，作者自绘。）}\label{fig:chapt_4_people_talking_ratio}
+\vspace{\baselineskip}
+\end{figure}
+
+
+\subsection{人均声功率确定}
+
+人均声功率的确定有两大类测试方法，第一种为实验室测试法，让被测试者在实验室环境中进行语言发声，利用声级计等测试设备记录数据，并计算出人均声功率。根据实验室条件的不同可以分为普通空间测试法和消声室测试法，其中普通空间测试法需要在测得的数据中剔除空间影响因素，即混响声能的影响。而消声室测试法无需此步骤，能够得到更准确的结果。同时测试的人数也各不相同，一种方法为给予一定语料让被测试者朗读，另一种方法为两个或多个被试者交谈，测试其中一人的声功率，或者测试总的声功率以后均分为每个人的平均值。实验室测试方法的优点是测试过程严谨，测试结果精确。缺点为场景转换前后人们的说话状态不同，利用实验室测试的数据进行实际空间的预测并不具有充分的说服力。
+
+第二种方法为实地测量，现有的研究基本在教室和餐饮空间中进行，即在想要进行测试的建筑类型中布置声学测试设备，测试空间中的人群噪声状况，然后测试空间的声学特性，主要是指空间中的混响时间，以利用室内声压级计算公式倒推空间中的总声功率，然后求出每个人的平均声功率。这种方法相对与实验室测试的优点在于能够让测试者处于真实的环境中，被试者发出的声功率即为正常水平。缺点在于需要通过声场信息进行反向推导，这在容积较小的空间中可以通过扩散声场假设来进行计算，而在特大空间这种明显的非扩散声场，这种计算方式便很难有说服力。
+
+本文采取了一种不同于以上两种方法的新方法。利用特大空间中一段时间内背景噪声比较稳定的特点，利用特大空间中的局部区域（如在长春站候车厅中的座席区），在内布置一测点，对其噪声值进行单独测量，分别测量此区域满场和空场两种情况下的噪声值，将此区域以外的噪声视为恒定不变的背景噪声，只考虑此区域内的人群噪声影响。比较两者的差距从而得到座席区满场时的总声功率，再根据人数平均后得到每个人的平均声功率。此方法也可以视为针对特大空间的一种现场测试改进方法。
+
+座席区内的噪声叠加可以根据以下方法计算。假设一个座席区的长边长度为$\rm l$（$\rm m$），短边长度为$\rm w$（$\rm m$），其中人群间距为$\rm m$（$\rm m$），则座席区中的人数
+
+\begin{eqnarray}
+\label{eq:l_w_m_get_N}
+N=\frac{l \cdot w}{m^2}
+\end{eqnarray}
+
+如果在座席区内取一微元，如图\ref{fig:chapt414rectangularintegral}所示，则微元内的人数
+
+\begin{eqnarray}
+\label{eq:dl_dw_m_get_dN}
+dN=\frac{dl \cdot dw}{m^2}
+\end{eqnarray}
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{phd_figures/chapt414rectangularintegral.eps}
+\caption{四分之一坐席区域微分示意图，作者自绘。}\label{fig:chapt414rectangularintegral}
+\vspace{\baselineskip}
+\end{figure}
+
+
+根据球面波的衰减规律，假设一个人发出的平均声功率为$\rm W_p$（$\rm W$）。，其在距离$\rm r_0$（$\rm m$）处产生的声强为$\rm I_0$（$\rm W/m^2$），座席区中央设置为坐标原点，微元中心坐标分别为$\rm x$，$\rm y$。则微元处一个人在坐标原点处产生的声强
+
+
+\begin{eqnarray}
+\label{eq:sound_level_I}
+I_r=\frac{I_0{r_0}^2}{x^2 + y^2}
+\end{eqnarray}
+单位为$\rm W/m^2$。将以上二式结合，得出微元在坐标原点处产生的声强
+
+\begin{eqnarray}
+\label{eq:dL_dW_get_I_at_zero}
+\delta I=dN\cdot I_r=\frac{dl \cdot dw}{m^2} \cdot \frac{I_0{r_0}^2}{l^2 + w^2}=\frac{I_0{r_0}^2}{m^2 \cdot (l^2 + w^2)} \cdot dl dw
+\end{eqnarray}
+
+由于声源不可能无限接近接收点，即座席区中央，因此假设座席区中央周围$\rm q$（$\rm m$）范围内没有人，则在座席区四分之一区域内对微元进行多重积分，再乘以4得出整个座席区中央的总声压级
+
+\begin{eqnarray}
+\label{eq:integrate_x_y_get_SPL}
+I=4\int_{q}^{0.5l}\int_{q}^{0.5w} \frac{I_0{r_0}^2}{m^2 \cdot (l^2 + w^2)} \cdot dl dw=\frac{4I_0{r_0}^2}{m^2} \cdot \int_{q}^{0.5l}\int_{q}^{0.5w}  \frac{1}{l^2 + w^2} \cdot dl dw
+\end{eqnarray}
+单位为$\rm W/m^2$。
+
+但是这种方法得出结果涉及两个变量，积分很难计算，因此采用以下方式进行简化。
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.6\textwidth]{phd_figures/chapt_4_rectangular_to_circle.eps}
+\caption{长方形座席区近似为圆形，作者自绘。}\label{fig:chapt_4_rectangular_to_circle}
+\vspace{\baselineskip}
+\end{figure}
+
+如图~\ref{fig:chapt_4_rectangular_to_circle}所示，为了简化参数，便于积分，将长方形座席区近似为圆形。则座席区中的人数
+
+\begin{eqnarray}
+\label{eq:rectangular_to_circle}
+N = \frac{\pi R^2}{m^2}
+\end{eqnarray}
+其中，$\rm R$为半径；半径增加$\rm \mathrm{d}r$，则增加的人数为：
+
+\begin{eqnarray}
+\label{eq:R_add_dr}
+\mathrm{d}N=\frac{\pi(R+dr)^2 - \pi R^2}{m^2}
+\end{eqnarray}
+化简，得
+
+\begin{eqnarray}
+\label{eq:simplifer_R_add_dr}
+\mathrm{d}N=\frac{2 \pi R dr}{m^2}
+\end{eqnarray}
+根据球面波衰减，单个声音脉冲在接收点的声强
+
+\begin{eqnarray}
+\label{eq:sphere_attenuate}
+I_R=\frac{I_0{r_0}^2}{R^2}
+\end{eqnarray}
+单位为$\rm W/m^2$。以上二式相乘，得出$\rm dr$范围内的人在座席区中央产生的声能
+
+\begin{eqnarray}
+\label{eq:a_cheng_b}
+\delta I_R^{R+dr}=dN\cdot I_R=\frac{2 \pi Rdr}{m^2} \cdot \frac{I_0{r_0}^2}{R^2}=\frac{2 \pi I_0{r_0}^2}{m^2} \cdot \frac{1}{R}\cdot dr
+\end{eqnarray}
+
+对式~\ref{eq:a_cheng_b}在无人距离$\rm q$到圆形半径$\rm R$范围内求积分，得
+
+\begin{eqnarray}
+\label{eq:integrate_r}
+I=\delta I_{q}^{R}=\int_{q}^{R}\frac{2 \pi I_0{r_0}^2}{m^2 } \cdot \frac{1}{r}\cdot dr=\frac{2 \pi I_0{r_0}^2}{m^2}\ln r\bigg|_{q}^{R}=\frac{2 \pi I_0{r_0}^2}{m^2}\ln \frac{r}{q}
+\end{eqnarray}
+单位为$\rm W/m^2$。假设人群间距即为两个人之间的最小距离，即
+
+\begin{eqnarray}
+\label{eq:qm}
+q=m
+\end{eqnarray}
+
+另已知，长方形与圆形面积相等，则
+
+\begin{eqnarray}
+\label{eq:pi_r2}
+ l*w=\pi r^2
+\end{eqnarray}
+
+其等效圆半径
+
+
+\begin{eqnarray}
+\label{eq:lw_pi}
+r=\sqrt{\frac{l*w}{\pi}}
+\end{eqnarray}
+单位为m。结合式（~\ref{eq:integrate_r}）、式（~\ref{eq:qm}）和式（~\ref{eq:pi_r2}），得
+
+\begin{eqnarray}
+\label{eq:I_again}
+I=\frac{\pi I_0{r_0}^2}{m^2}\ln \frac{l*w}{\pi q^2}
+\end{eqnarray}
+单位为$\rm W/m^2$。则
+
+
+\begin{eqnarray}
+\label{eq:SPLTOTAL}
+SPL_{total} \approx L_I=10\lg \frac{I}{I_s}=10\lg (\frac{\pi I_0{r_0}^2}{I_s m^2}(\ln \frac{l*w}{\pi q^2}))\\
+=10\lg(\frac{I_0{r_0}^2}{I_s})+10\lg (\frac{\pi }{ m^2}\ln \frac{l*w}{\pi q^2})
+\end{eqnarray}
+
+单位为dB。根据
+
+\begin{eqnarray}
+\label{eq:I_P}
+L_I \approx L_p = L_w - 20\lg r - 11=10 \lg \frac{I}{I_s}
+\end{eqnarray}
+单位为dB。如果使用$\rm L_w$代替$\rm I_0r_0$:
+
+\begin{eqnarray}
+\label{eq:LW}
+10\lg \frac{I_0{r_0}^2}{I_s}=L_w - 11
+\end{eqnarray}
+则
+\begin{eqnarray}
+\label{eq:SPL_FINAL}
+SPL_{total} \approx L_w + 10\lg (\frac{\pi }{ m^2}\ln \frac{l*w}{\pi q^2})-11
+\end{eqnarray}
+单位为dB。
+
+利用计算机模型对不同的座席区长度$\rm l$、座席区宽度$\rm w$、人群间距$\rm m$、座席区原点周围无人距离$\rm q$ 等参数换算成的圆形区域，与之前长方形座席区的总声压级相比较，即确定不同参数下此圆形近似法的精度度。
+
+为了讨论更多的情况，以下参数选取的范围在正常取值范围基础上进行了扩展：由于座席区也可以类比均匀分布的长方形空间，因此座席区长度分别设置为50, 100, 150, 200, 250, 300, 350, $\rm 400 m$；座席区宽度以座席区长度乘以长宽比的方式表示，长宽比分别设置为0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0；人群间距m分别设置为1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, $\rm 5 m$；座席区原点周围无人距离q 分别设置为3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, $\rm 15m$。 分别计算圆形近似的总声压级误差。
+
+结果如图4-7所示，由于参数为多维参数，因此压缩至二维图表时对其他几个维度取平均值，最终结果仅能够得出不同参数总声压级误差最小的大致范围。结果发现（1）人群间距m对总声压级误差影响较小的范围为$\rm 2.5 m$以内，这是由于越小的人群间距代表越密集的人群，从而相当于提高了最终数据的稳定性，从而减少了圆形近似法的总声压级误差；（2）座席区原点周围无人距离q对总声压级误差影响较小的范围为$\rm 10 m$附近，更小或者更大的值都会引起误差的增大，其中更小的q值引起的误差相对较小。这主要是由于更小的q值造成公式计算的内径靠近坐标原点，相当于声源靠近接收点，从而对其造成较大的影响，这也说明在预测和测试时最好保持周围更大范围的无人状态，能够得到更好的测试结果；（3）座席区边长超过$\rm 100 m$ 时，误差总体很小，超过$\rm 150 m$ 时，其他参数的影响都被平均值较小值。说明座席区越大，最终误差越小，这一点与人群间距互相呼应。当然这不意味着边长小于$\rm 100m$的座席区就不能采用圆形近似法，这点将在后续进行说明；（4）长宽比和长边长度共同对总声压级误差产生影响，可以看出当座席区长边长度超出$\rm 50 m$ 后，不同的座席区比例下总声压级误差都比较小。
+
+\begin{figure}[!htb]
+	\begin{center}
+		\subfigure[]{\includegraphics[width=0.8\textwidth]{phd_figures/chapt_4_difmlw_a.eps}}\\ 				% eps file
+		\subfigure[]{\includegraphics[width=0.8\textwidth]{phd_figures/chapt_4_difmlw_b.eps} }\\
+		\subfigure[]{\includegraphics[width=0.8\textwidth]{phd_figures/chapt_4_difmlw_c.eps} }\\
+		\subfigure[]{\includegraphics[width=0.8\textwidth]{phd_figures/chapt_4_difmlw_d.eps} }\\
+		\caption{ \label{fig:chapt_4_difmlw} 不同参数时的圆形近似法产生的总声压级误差。（a: 不同人群间距，图中不同颜色代表不同的座席区原点周围无人距离；b: 不同的座席区原点周围无人距离，图中不同颜色代表不同的人群间距；c: 不同座席区长边长，图中不同颜色代表不同的长宽比；d: 不同长宽比，图中不同颜色代表不同的座席区长边长。作者自绘。）}
+	\end{center}
+\end{figure}
+
+由于计算的参数为四个维度，而图~\ref{fig:chapt_4_seat_test_shiyi}只表现了其中两个维度，对剩下的两个维度结果取平均值，因此以上计算结果只是给出了每个参数误差较小的取值范围，并不意味着此范围以外的取值其误差一定很大。
+
+这样使用此方法，可以降低特大空间中的人群声功率测试难度，通过在座席区设置接收点，将座席区的尺寸，即实时人数输入公式，即可反向求出时间平均后的人均声功率，结合人的平均说话比例，可以得出人说话时的平均声功率。本文通过实测长春站中的两个座席区，测点位于座席区，测试仪器为一级精度手持式声级计，如图~\ref{fig:chapt_4_last}所示，以验证此方法的可行性。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_4_seat_test_shiyi_a}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_seat_test_shiyi_a.eps}}
+  \subfigure[]{\label{subfig:chapt_4_seat_test_shiyi_b}
+                \includegraphics[width=0.45\textwidth]{phd_figures/chapt_4_seat_test_shiyi_b.eps}}
+  \caption{测试的长春站两个座席区照片（a:座席区1；b:座席区2。白框为测试方法示意。作者自绘。）}\label{fig:chapt_4_seat_test_shiyi}
+\vspace{\baselineskip}
+\end{figure}
+
+测试的两个座席区中央声压级和人数随时间变化如图~\ref{fig:chapt_4_last}所示，根据式~\ref{eq:SPL_FINAL}对两个座席区进行了相应的计算，得出座席区1和座席区2的人均声功率分别为$\rm 57.2 dB$和$\rm 63.5dB$，这个数值显著低于通常人们的说话声功率，其原因为过低的说话比例，由于人在候车状态下多处于休息状态，很少与周围人交流。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_4_last_2}
+                \includegraphics[width=0.6\textwidth]{phd_figures/chapt_4_last_2.eps}}\\
+  \subfigure[]{\label{subfig:chapt_4_last_1}
+                \includegraphics[width=0.6\textwidth]{phd_figures/chapt_4_last_1.eps}}
+  \caption{座席区测试期间人数与时间的关系。（a:座席区1；b:座席区2。作者自绘。）}\label{fig:chapt_4_last}
+\vspace{\baselineskip}
+\end{figure}
+
+\subsection{界面总吸声量}
+
+界面吸声量的确定在特大空间中，特别是人流量密集的特大型候车厅十分困难。传统的方法是通过测试空间中的混响时间，然后根据混响时间计算公式倒推空间中的总吸声量。但是混响时间计算公式基于扩散声场假设，而在特大空间这种非扩散声场中，混响时间计算公式的适用性是有待商榷的。而且在候车厅这种人流量密集、全天候使用、容易引起恐慌的特大空间中，无论使用无指向声源的噪声阻断法，还是使用发令枪作为声源的脉冲相应法，都是很难实现的。
+但是由于长春站未做针对性的吸声处理，除了空间使用者之外未发现明显吸声体，只有布置的皮质按摩椅有较低的吸声量，主要吸声体仍然为空间中人群自带的吸声量。因此本文假设每个按摩座椅具有$\rm 0.1 m^2$的中频吸声量。长春站按摩椅约有1000个，则自带中频吸声量约为$\rm 100 m^2$。
+
+\subsection{遮挡物}
+
+之前第三章的研究中发现，特大空间中声源发出的直达声和早期反射声都对接收点处的总声压级有不可忽略的影响，而众多声能的叠加作用造成了特大空间中的噪声难以处理的问题。普通的特大空间虽然多为集中式，但是人耳平面（一般人站立时离地面高度为$\rm 1.5m$，坐姿时离地面高度$\rm 1.2 m$）上依然存在一些遮挡物，能够在某种程度上遮挡直达声和早期反射声。本节将对这些遮挡物的遮挡作用进行初步研究，为以后的理论研究和降噪设计提供借鉴和新思路。
+
+本文选取长春站存在遮挡的两处区域，这两处区域分别为展示架、就餐区矮墙，如图~\ref{fig:4_zhedangwu}所示。为了避免产生明显的耦合效应，选取的两个遮挡物都为局部遮挡，保留大面积的耦合面，使遮挡物仅起到遮挡直达声和早期反射声的作用，避免耦合效应的影响。
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:zhedangwu_1}
+                \includegraphics[width=0.6\textwidth]{phd_figures/zhedangwu_1.eps}}\\
+  \subfigure[]{\label{subfig:zhedangwu_2}
+                \includegraphics[width=0.6\textwidth]{phd_figures/zhedangwu_2.eps}}
+  \caption{长春站中选取的遮挡物示意图（a:展示架；b:矮墙。作者自绘。）}\label{fig:4_zhedangwu}
+\end{figure}
+
+结果如图\ref{fig:chapt_4_zhangaiwu}所示，结果显示遮挡物外的噪声整体上略高于遮挡物内，而且在遮挡物内噪声明显趋于稳定，而遮挡物以外则接收到明显的噪声源，这也验证了之前的猜想，即特大空间中直达声和早期反射声的在总声能中的重要地位。位于遮挡物以内，相对减少了直达声和早期反射声的影响，接收到的噪声就有了明显的降低。
+
+同时也测试了内外两侧的平均声压级，围墙外比围墙内高$\rm 2.3 dB$，而展示架外比展示架内高$\rm 1.7 dB$，这也说明了遮挡物这大空间中的降噪作用，在以后的建筑设计中可以予以相应考虑。
+
+
+\begin{figure}[!htb]
+  \centering
+  \subfigure[]{\label{subfig:chapt_4_zhangaiwu_1}
+                \includegraphics[width=0.9\textwidth]{phd_figures/chapt_4_zhangaiwu_1.eps}}\\
+  \subfigure[]{\label{subfig:chapt_4_zhangaiwu_2}
+                \includegraphics[width=0.9\textwidth]{phd_figures/chapt_4_zhangaiwu_2.eps}}
+  \caption{测点在遮挡物内侧和外侧时的声压级变化（a:展示架；b:矮墙。作者自绘。）}\label{fig:chapt_4_zhangaiwu}
+\vspace{\baselineskip}
+\end{figure}
+
+
+\subsection{其他因素}
+
+还有其他一些因素会影响到特大空间中的人群噪声状况，比如说人均吸声量,人穿着的衣物多为纤维制品，具有良好的吸声特性，特别是在容纳人数众多的特大空间中，其吸声量叠加在一起，到达一个不能被忽视的程度，关于人均吸声量的具体数值，已经有很多文献给出了相应的参考数据。根据文献\cite{hodgson2007measurement}确定为每人$\rm 0.5 m^2$。
+\FloatBarrier
+\section{人群噪声预测模型}\label{sec:crowd_model_establish}
+
+本文希望根据之前模拟得出的声压级特点及相应的声能构成分析，建立新的基于统计声学的声压级预测模型，提高在大空间中的声压级预测精确度。
+
+\subsection{预测模型建立}
+
+预测模型仍然基于统计声学模型，在前人的预测模型上进行改进。最简单的模型为利用室内声压级计算公式进行叠加计算，假设空间中原有界面吸声量为$\rm A_S$，现有人数为$\rm N_P$，每个人的平均声功率为$\rm W_p$，一个人的平均吸声量为$\rm A_p$,但是这种方法需要确定每个人的位置，而且计算量较大，因此实际应用的案例很少。
+
+现有预测模型多用的方式为忽略室内声压级计算公式中的直达声能，只计算其中的混响声能部分，这样就可以忽略声源的位置信息，直接根据人数进行叠加计算即可。
+
+但是本文之前的研究已经表明，直达声能是特大空间中总声能的重要组成部分，直接将这一部分声能予以忽略，从理论上讲也很难得到一个精确的预测结果。
+
+因此本文将根据现场测试发现的一些人群分布规律，以及之前针对大空间声场的研究，从理论上开发能够考虑直达声能的新的人群噪声预测模型，从而提高现有预测模型的预测精确度。
+
+考虑直达声的一个重要难点在于无法准确的获得每个人的坐标信息，而且这也意味着巨大的计算量，不利于预测模型的使用和推广，因此需要在现有基础上进行一些简化。
+考虑到很多大空间都有类似于座席区的休息区设置，一种可以考虑的简化方式为以座席区为中心，将座席区的人的坐标假设位于座席区中央。以正常人交流的声功率为依据，当传播至小于背景噪声时则不进行单独计算。
+
+由此将整个计算分为三个部分，第一部分为座席区，计算原点位于座席区中央，声功率为座席区所有人平均声功率之和；第二部分为散布在整个空间中的随机位置，这部分人数较少；第三部分为接收点附近的人，由于离声源较近需要单独考虑。即
+
+\begin{eqnarray}
+\label{eq:crowd_noise_total_add}
+SL_{total} = L_{seat} \dot{+} L_{random} \dot{+} L_{near}
+\end{eqnarray}
+单位为（dB）。其中，$\rm \dot{+}$表示能量相加；$\rm L_{seat}$为所有座席区在接收点处的总声能（dB）；$\rm L_{random}$为散布在空间中的人产生的总声能（dB）；$\rm L_{near}$为附近的人产生的总声能（dB）。
+其中$\rm L_{seat}$的声能计算可采用本文第三章提出的声压级预测模型，即式~\ref{large_space_equation}，以得到更准确的预测结果。此时计算所需的座席区总声功率
+
+\begin{eqnarray}
+\label{eq:power_seat_total_n}
+W_{seat,total}=N_{seat}W_p
+\end{eqnarray}
+单位为（dB）。其中，$\rm N_{seat}$为单个座席区的总人数；$\rm W_p$为每个人的声功率。当用于预测时，也可以假设各个座席区之间以及座席区内部的人群均匀分布，此时可根据候车厅的总人数与总座位数之比得到每个座席区的平均人数。
+
+$L_{random}$可采用附带控制条件的随机算法进行多次计算，控制条件为随机的声源点不过分靠近接收点，其界限可以为正常人交流时的声压级等于背景噪声时的距离，以免影响最后的结果，以获得各个接收点的人群噪声预测值。如果一些情况下此部分人数较少，也可采用忽略直达声，只计算混响声能的方式进行近似计算，此时,随机位置的旅客在接收点处产生的总声功率
+
+\begin{eqnarray}
+\label{eq:power_random_total_n}
+W_{random,total}=N_{random}W_p
+\end{eqnarray}
+单位为（dB）。$L_{near}$的声能计算可直接采用本文第三章提出的声压级预测模型，即式~\ref{large_space_equation}求出。
+
+
+朗巴德效应在人群噪声中也占有重要位置。其对声功率的影响效果为迭代效应，具体为先根据式~\ref{eq:crowd_noise_total_add} 初步预测空间中各测点的人群噪声值，然后据此计算下一迭代次数的人群声功率。即下一次迭代的声功率级
+
+\begin{eqnarray}
+\label{eq:power_random_total_n}
+L_{w,p,n+1}=L_{w,p,n}+m_{lombard}(L_{s,n}-L_{s,n-1})
+\end{eqnarray}
+单位为（dB）。其中，$L_{w,p,n}$为此次迭代的人群声功率级（dB）；$\rm m_{lombard}$为朗巴德斜率系数，根据前人的研究，其朗巴德斜率值多在0.5 附近，本文也以此为依据进行人群噪声的计算；$\rm L_{s,n}$为此次预测的各测点声压级（dB）；$\rm L_{s,n-1}$ 为前次预测的各测点声压级（dB），其初始值为背景噪声。其迭代的截止条件可以为相邻两次预测总声压级差小于某个声压级极小值，如$\rm 0.05 dB$。
+
+\subsection{预测模型精确度}
+
+将之前章节确定的各个因素取值带入人群噪声预测模型，其中各座席区坐标如表\ref{tab:test_points_chagnchun}所示。
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[!htb]
+\centering
+\caption{长春站候车厅座席区中心点坐标。（表中行表示X轴坐标值，列表示Y轴坐标值，值为测点编号）}
+\label{tab:test_points_chagnchun}
+\begin{tabular}{ccccccc}
+\toprule[1.5pt]
+\multicolumn{2}{l}{\multirow{2}{*}{}} & \multicolumn{5}{c}{X}      \\
+\multicolumn{2}{l}{}                  & 65 & 106 & 135 & 159 & 185 \\
+\midrule[1pt]
+\multirow{4}{*}{Y}       & 24.5       & 17 & 13  & 9   & 5   & 1   \\
+                         & 43.5       & 18 & 14  & 10  & 6   & 2   \\
+                         & 65         & 19 & 15  & 11  & 7   & 3   \\
+                         & 84         & 20 & 16  & 12  & 8   & 4   \\
+\bottomrule[1.5pt]
+\end{tabular}
+\end{table}
+
+求出长春站各测试点的人群噪声值后，所得结果如图\ref{fig:chapt_4_accuracy}所示。将其与所有测点的平均值进行比较。结果可以发现，虽然预测的人群噪声趋势与实测值类似，但是仍有部分时间数据并不吻合，这主要是因为人群噪声受太多因素干扰，从而体现出较大的波动性，因此使用人群噪声预测模型进行预测时，应该充分考虑波动性的影响，以确保实际应用中不出现人群噪声突然增大甚至触发朗巴德效应的阈值而失去控制的情况。
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.85\textwidth]{phd_figures/chapt_4_accuracy.eps}
+\caption{预测值与所有测点的平均值差异，作者自绘。}\label{fig:chapt_4_accuracy}
+\vspace{\baselineskip}
+\end{figure}
+\FloatBarrier
+\section{本章小结}
+本章首先在长春站进行了人群噪声空间分布的实地测试，得到了长春站人群噪声和候车厅人数随时间的变化规律，得到了人群噪声和候车厅人数的对应关系；然后对影响人群噪声的一些因素进行了研究，如说话比例、人群声功率、界面总吸声量、遮挡物，发现在候车厅这种特大空间的形式中使用者的说话比例并不高，提出了一种针对座席区等人群密集区的人均声功率测试方法，以获得准确地预测结果，对空间中的界面吸声量进行了统计和估算，对遮挡物的遮挡作用进行了实地测试和分析；最终根据人群噪声的特点和之前对特大空间声场的研究，提出了一个新的特大空间人群噪声预测模型，能够尽可能的考虑直达声和早期反射声对和总声压级的影响，并利用长春站的测试数据验证了模型的准确性。
