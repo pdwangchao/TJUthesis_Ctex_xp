@@ -1,5 +1,5 @@
 # TJUthesis_Ctex_xp
-Tex template for thesis of Tianjin University. Just use it in by Ctex on XP.
+Tex template for thesis of Tianjin University. Just use it in Ctex2.9 on XP.
 
 You need Ctex2.9 intalled on XP system.
 
